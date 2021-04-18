@@ -7,7 +7,7 @@ const Button = (props) => {
             {
                 props.icon?
                 <button className={props.fill?`filled-button-i ${props.color}`:`line-button ${props.color}`}><i className={`${props.label}`}></i></button>
-                :<button className={props.fill?`filled-button ${props.color} ${props.width}`:`line-button ${props.color} ${props.width}`}>{props.label}<i className='fa fa-long-arrow-right'></i></button>
+                :<button className={props.fill?`filled-button ${props.color} ${props.width}`:`line-button ${props.color} ${props.width}`}>{props.label}<i className={`fa fa-long-arrow-right ${props.small}`}></i></button>
             }
             
         </div>

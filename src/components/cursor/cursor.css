@@ -26,3 +26,11 @@
 .cursor--hidden {
     opacity: 0;
 }
+@media screen and (max-width:499px){
+  .cursor{
+    display:none;
+  }
+  .cursor-inner{
+    display:none;
+  }
+}

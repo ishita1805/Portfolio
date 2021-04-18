@@ -115,15 +115,18 @@ button:hover {
     }
     .line-button{
         font-size:17px;
-        padding:1.75vh 2vh;
+        padding:1.75vh 3vh;
         margin-right:2vh;
     }
     .filled-button{
-        padding:2vh 2vh;
+        padding:2vh 3vh;
         font-size:17px;
     }
     .filled-button-i i{
         font-size:25px;
         margin:0;
+    }
+    .h-a-small{
+        display:none;
     }
 }
