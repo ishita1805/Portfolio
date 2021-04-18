@@ -1,0 +1,23 @@
+.header{
+    margin:1.3vh 0;
+    font-size:40px;
+}
+.dark{
+    color:white;
+}
+.light{
+    color:black;
+}
+.underline-sec{
+    height:3px;
+    width:100px;
+}
+.red{
+    background:#FF6363;
+}
+.green{
+    background:#59F8B5;
+}
+.blue{
+    background:#56AEFF;
+}

@@ -1,0 +1,129 @@
+button{
+    border:none;
+    outline:none;
+    cursor:none;
+    transition:0.5s;
+}
+.filled-button i, .line-button i{
+    margin-left:6vh;
+    font-size:20px;
+}
+.filled-button-i i{
+    font-size:25px;
+}
+
+.filled-button{
+    margin:0;
+    padding:2vh 3vh;
+    color:black;
+    margin-right:3vh;
+    font-family: 'Manjari';
+    font-size:19px;
+    font-weight:600;
+}
+.filled-button-i{
+    margin:0;
+    padding:1.6vh 2.2vh;
+    color:rgb(255, 255, 255);
+    margin-right:3vh;
+    font-family: 'Manjari';
+    font-size:19px;
+    font-weight:600;
+}
+.line-button{
+    margin:0;
+    padding:1.75vh 3vh;
+    background:none;
+    font-family: 'Manjari';
+    font-size:19px;
+    font-weight:600;
+}
+button:hover {
+    transition:0.5s;
+    padding-left:5vh;
+    padding-right:5vh;
+}
+.bt-y-l{
+    color:#F8CB59;
+    border:solid 2px #F8CB59;
+}
+.bt-y-f{
+    background:#F8CB59;
+}
+.bt-yl-f{
+    background:#F8CB59;
+    color: #C0962A;
+}
+.bt-r-l{
+    color:#FF6363;
+    border:solid 2px #FF6363;
+}
+.bt-r-f{
+    background:#FF6363;
+}
+.bt-g-l{
+    color:#59F8B5;
+    border:solid 2px #59F8B5;
+}
+.bt-g-f{
+    background:#59F8B5;
+}
+.w-100{
+    width:87% !important;
+}
+@media screen and (max-width:1300px){
+    .w-100{
+        width:88% !important;
+    }
+}
+@media screen and (max-width:1200px){
+    .w-100{
+        min-width:110% !important;
+        width:110% !important;
+    }
+}
+@media screen and (max-width:950px){
+    .w-100{
+        min-width:440px !important;
+        width:65.6% !important;
+    }
+}
+
+@media screen and (max-width:600px){
+    button i{
+        margin-left:3vh;
+    }
+    button:hover {
+        transition:0.5s;
+        padding-left:4vh;
+        padding-right:4vh;
+    }
+    .w-100{
+        min-width:96% !important;
+        width:96% !important;
+    }
+    
+}
+@media screen and (max-width:500px){
+    button i{
+        margin-left:1vh;
+    }
+    button:hover {
+        transition:0.5s;
+        padding-left:3vh;
+        padding-right:3vh;
+    }
+    .line-button{
+        font-size:17px;
+        padding:1.75vh 2vh;
+        margin-right:2vh;
+    }
+    .filled-button{
+        padding:2vh 2vh;
+        font-size:17px;
+    }
+    .filled-button-i i{
+        font-size:25px;
+        margin:0;
+    }
+}

@@ -1,0 +1,67 @@
+.icons{
+    height:60vh;
+    width:25vh;
+    border-radius:60vh 0 0 60vh;
+    margin-right:-8vh;
+    display:flex;
+    flex-direction:column;
+    z-index:1100;
+    cursor:none !important;
+    align-items:center;
+    padding-right:5vh;
+    justify-content:center;
+    background: #FF6363;
+    transition:0.5s;
+}
+.icons i{
+    color:white;
+    margin:2vh 0;
+    transition:0.5s;
+    cursor:none !important;
+    font-size:26px;
+}
+a{
+    cursor:none;
+}
+.icons i:hover{
+    color:rgb(255, 194, 194) !important;
+    transition:0.5s;
+}
+.icons:hover{
+   background:none;
+   border: solid 2px #FF6363;;
+   transition:0.5s;
+}
+.icons:hover i{
+    color:#FF6363;
+    transition:0.5s;
+ }
+ @media screen and (max-width:800px){
+    .icons{
+        height:50vh;
+        width:22vh;
+        border-radius:60vh 0 0 60vh;
+        margin-right:-6vh;
+        padding-right:3vh;
+        display:flex;
+        flex-direction:column;
+        align-items:center;
+        justify-content:center;
+        background: #FF6363;
+        transition:0.5s;
+    }  
+}
+
+@media screen and (max-width:500px){
+    .icons{
+        height:40vh;
+        width:13vh;
+        border-radius:60vh 0 0 60vh;
+        margin-right:-9vh;
+        padding-right:7vh;
+    }  
+    .icons i{
+        margin:1vh 0;
+        font-size:23px;
+    }
+}

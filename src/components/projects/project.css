@@ -1,0 +1,24 @@
+#project {
+    background:#00030D;
+    min-height:86vh;
+    width:92vw;
+    padding:6vh 4vw 8vh 4vw;
+    border-bottom:solid 2vh #59F8B5;
+}
+.projects-grid{
+    display:flex;
+    flex-direction:row;
+    min-height:50vh;
+    /* background:pink; */
+    flex-wrap:wrap;
+    margin: 9vh 0;
+    margin-bottom:3vh;
+    align-items:flex-start;
+    justify-content:flex-start;
+}
+@media screen and (max-width:700px){
+    .projects-grid{
+        align-items:flex-start;
+        justify-content:center;
+    }
+}

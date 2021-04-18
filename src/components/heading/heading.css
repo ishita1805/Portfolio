@@ -1,0 +1,102 @@
+.heading{
+    display:flex;
+    padding:0;
+    flex-direction:column;
+    flex-grow:1;
+    margin-left:4vw;
+    height:fit-content;
+}
+.head-span-1{
+    font-size:70px;
+    letter-spacing: 2px;
+    font-weight: 600;
+    color: #F3EEE0;
+}
+.head-span{
+    font-size:95px;
+    padding:0;
+    background:url('../../assets/ishita.png');
+    background-repeat: repeat;
+    background-clip: text;
+    /* background-size: 100% 280px; */
+    /* background-position:11% -12%; */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 800;
+    color: #F3EEE0;
+    animation: animate-background alternate 15s infinite;
+}
+.buttons{
+    display:flex;
+    /* margin:1vh 0; */
+    flex-direction:row;
+    align-items:center;
+    justify-content:flex-start;
+}
+@keyframes animate-background  {
+    from {
+        background-position:-22% -42%;
+    }
+    to {
+        background-position:-8% -12%;
+    }
+}
+
+.underline{
+    width:100px;
+    height:3px;
+    border-radius:3px;
+    margin-top:-3.5vh;
+    background:#F8CB59;
+}
+.tag{
+    font-size:24px;
+    font-weight:300;
+    margin:3.5vh 0 3vh 0;
+    color:rgb(206, 206, 206);
+}
+@media screen and (max-width:1200px){
+    .head-span-1{
+        font-size:50px;
+    }
+    .head-span{
+        font-size:75px;
+    }
+    @keyframes animate-background  {
+        from {
+            background-position:-40% -20%;
+        }
+        to {
+            background-position:-45% -30%;
+        }
+    }
+    .tag{
+        font-size:20px;
+    }
+    
+}
+@media screen and (max-width:600px){
+    .head-span-1{
+        font-size:42px;
+    }
+    .head-span{
+        font-size:60px;
+    }
+    .tag{
+        font-size:18px;
+    }
+}
+@media screen and (max-width:490px){
+    .tag{
+        width:70%;
+    }
+    .head-span-1{
+        font-size:37px;
+    }
+    .head-span{
+        font-size:55px;
+    }
+    .underline{
+        width:80px;
+    }
+}

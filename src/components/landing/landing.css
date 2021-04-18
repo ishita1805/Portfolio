@@ -1,0 +1,37 @@
+#home{
+    width:100vw;
+    padding:4vh 0;
+    height:92vh;
+    display:flex;
+    align-items:center;
+    flex-direction:row-reverse;
+    overflow-x:hidden;
+    background:rgb(0, 0, 0);
+}
+.landing-vector{
+    min-width:300px;
+    margin-right:15vh;
+    max-height:88vh;
+    height:auto;
+    margin-top:1vh;
+    width:auto;
+    z-index:1000;
+    height:auto;
+}
+@media screen and (max-width:1300px){
+    .landing-vector{
+        height:auto;
+        width:33vw;
+        margin-right:7vh;
+    }
+}
+@media screen and (max-width:1200px){
+    .landing-vector{
+        margin-right:3vh;
+    }
+}
+@media screen and (max-width:950px){
+    .landing-vector{
+      display:none;
+    }
+}

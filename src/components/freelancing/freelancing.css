@@ -1,0 +1,9 @@
+#freelance{
+    background:#F3F3F3;
+    width:92vw;
+    min-height:90vh;
+    display:flex;
+    flex-direction:column;
+    padding:7vh 4vw;
+    border-bottom:solid 4vh #D43957;
+}

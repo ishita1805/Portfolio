@@ -1,0 +1,29 @@
+.side-nav{
+    position:absolute;
+    z-index:1000;
+    right:0;
+    display:flex;
+    flex-direction:column;
+    justify-content:space-between;
+    align-items: center;
+    height:94vh;
+    padding:3vh 0;
+    padding-right:3vh;
+    color:rgb(143, 143, 126);
+}
+.r-90{
+    transform: rotate(90deg);
+    width:fit-content;
+    margin-top:5vh;
+}
+.m-r-3{
+    margin-right:4vh;
+}
+@media screen and (max-width:500px){
+    .m-r-3{
+        margin-right:0vh;
+    }
+    .r-90{
+        margin-right:-3vh;
+    }
+}
