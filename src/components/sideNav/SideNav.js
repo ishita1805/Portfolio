@@ -5,7 +5,7 @@ const SideNav = () => {
     return (
         <div className='side-nav'>
             <p class='r-90'>Contact</p>
-            <p class='m-r-3'>EN / HI</p>
+            <p class='m-r-3'>EN / FR</p>
         </div>
     )
 }

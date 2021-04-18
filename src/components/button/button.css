@@ -71,6 +71,11 @@ button:hover {
 .w-100{
     width:87% !important;
 }
+.w-100:hover{
+    border:2px solid #F8CB59;
+    background:none;
+    color: #F8CB59;
+}
 @media screen and (max-width:1300px){
     .w-100{
         width:88% !important;

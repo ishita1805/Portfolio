@@ -25,7 +25,11 @@ const Project = () => {
             </div>
 
             <center>
-                <Button color='bt-g-l' label='View My Art' fill={false}/>
+                <Button 
+                color='bt-g-l' 
+                label='View My Art' 
+                fill={false}
+                id='https://www.instagram.com/artiishiii.__/'/>
             </center>
         </div>
     )

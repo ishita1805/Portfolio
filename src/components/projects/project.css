@@ -1,6 +1,6 @@
 #project {
     background:#00030D;
-    min-height:86vh;
+    min-height:90vh;
     width:92vw;
     padding:6vh 4vw 8vh 4vw;
     border-bottom:solid 2vh #59F8B5;
@@ -14,7 +14,7 @@
     margin: 9vh 0;
     margin-bottom:3vh;
     align-items:flex-start;
-    justify-content:flex-start;
+    justify-content:center;
 }
 @media screen and (max-width:700px){
     .projects-grid{

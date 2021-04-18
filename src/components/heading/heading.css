@@ -24,7 +24,7 @@
     -webkit-text-fill-color: transparent;
     font-weight: 800;
     color: #F3EEE0;
-    animation: animate-background alternate 15s infinite;
+    animation: animate-background alternate 13s infinite;
 }
 .buttons{
     display:flex;

@@ -25,8 +25,21 @@ const Heading = () => {
                 />
             </p>
             <div className='buttons'>
-                <Button small='h-a-small' color='bt-y-f' label='Hire Me' fill={true}/>
-                <Button small='h-a-small' color='bt-y-l' label='My Work' fill={false}/>
+                <Button 
+                small='h-a-small' 
+                color='bt-y-f' 
+                label='Hire Me' 
+                fill={true}
+                internal={0}
+                id='hire'
+                />
+                <Button 
+                small='h-a-small' 
+                color='bt-y-l' 
+                label='My Work' 
+                fill={false}
+                internal={0}
+                id='project'/>
             </div>
         </div>
     )
