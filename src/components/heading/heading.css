@@ -88,7 +88,9 @@
 }
 @media screen and (max-width:490px){
     .tag{
-        width:70%;
+        width:80%;
+        min-height:6vh;
+        /* background:pink; */
     }
     .head-span-1{
         font-size:37px;
