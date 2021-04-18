@@ -129,4 +129,8 @@ button:hover {
     .h-a-small{
         display:none;
     }
+    .w-100{
+        min-width: 99% !important;
+        width:99% !important;
+    }
 }
