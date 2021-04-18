@@ -5,7 +5,7 @@ import Button from '../button/Button'
 import techList from '../../data/techList'
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-
+import resume from '../../assets/resume.pdf'
 const About = () => {
     useEffect(() => {
         AOS.init({
@@ -58,13 +58,12 @@ const About = () => {
                 </div>
                 <div data-aos='fade-up' className='buttons'>
                     <Button label='fa fa-github' icon={true} color='bt-r-f' fill={true} id='https://github.com/ishita1805'/>
-                    <Button label='My Resume' color='bt-r-l' fill={false}/>
+                    <Button label='My Resume' color='bt-r-l' fill={false} id={resume}/>
                 </div>
                 <br/>
                 <br/>
             </div>
         
-           
         </div>
     )
 }

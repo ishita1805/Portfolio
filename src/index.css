@@ -16,8 +16,8 @@ h3, h1, h2 {
   width:10px;
 }
 ::-webkit-scrollbar-thumb{
-  background:rgb(37, 37, 37);
+  background:rgb(54, 54, 54);
 }
 ::-webkit-scrollbar-track{
-  background:rgb(15, 15, 15);
+  background:rgb(0, 0, 0);
 }

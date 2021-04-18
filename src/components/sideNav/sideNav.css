@@ -16,8 +16,17 @@
     width:fit-content;
     margin-top:5vh;
 }
+.r-90 a{
+    text-decoration: none !important;
+    color:rgb(143, 143, 126);
+    font-weight:700;
+}
 .m-r-3{
     margin-right:4vh;
+}
+.bold{
+    font-weight:700;
+    color:rgb(255, 222, 77);
 }
 @media screen and (max-width:500px){
     .m-r-3{
