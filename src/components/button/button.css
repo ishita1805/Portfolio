@@ -134,3 +134,9 @@ button:hover {
         width:99% !important;
     }
 }
+@media screen and (max-width:499px){
+    .w-100{
+        min-width: 100% !important;
+        width:100% !important;
+    }
+}
