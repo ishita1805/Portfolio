@@ -1,7 +1,6 @@
 import React from 'react'
 import './landing.css'
 import Icons from '../icons/Icons'
-import Image from '../three/Three'
 import Heading from '../heading/Heading'
 import SideNav from '../sideNav/SideNav'
 import vector from '../../assets/man.png'
