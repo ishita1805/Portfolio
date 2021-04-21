@@ -1,0 +1,45 @@
+.move-up-icon{
+    height:8vh;
+    width:8vh;
+    background:rgb(255, 32, 69);
+    color:white;
+    border-radius:4vh;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    position:fixed;
+    bottom:3vh;
+    left:3vh;
+    z-index:3000;
+}
+.move-up-icon:hover {
+    border:solid 2px rgb(255, 32, 69);
+    color:rgb(255, 32, 69);
+    background:none;
+    height:7.6vh;
+    width:7.6vh;
+}
+.hide-ic{
+    display:none;
+}
+.move-up-icon i{
+    font-size:24px;
+    margin-top:-0.5vh;
+    color:white;
+}
+.move-up-icon:hover i{
+    color:rgb(255, 32, 69);
+}
+@media screen and (max-width:600px){
+    .move-up-icon{
+        height:6vh;
+        width:6vh;
+    }
+    .move-up-icon i{
+        font-size:22px;
+    }
+    .move-up-icon:hover {
+        height:5.6vh;
+        width:5.6vh;
+    }
+}

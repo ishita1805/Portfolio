@@ -5,7 +5,7 @@ button{
     transition:0.5s;
 }
 .filled-button i, .line-button i{
-    margin-left:6vh;
+    margin-left:4vh;
     font-size:20px;
 }
 .filled-button-i i{
@@ -76,6 +76,9 @@ button:hover {
     background:none;
     color: #F8CB59;
 }
+.ib{
+    margin:0 !important;
+}
 @media screen and (max-width:1300px){
     .w-100{
         width:88% !important;
@@ -109,7 +112,7 @@ button:hover {
     }
     
 }
-@media screen and (max-width:500px){
+@media screen and (max-width:600px){
     button i{
         margin-left:1vh;
     }

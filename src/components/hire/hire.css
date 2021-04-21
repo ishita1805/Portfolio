@@ -63,7 +63,8 @@ textarea{
     color:black;
 }
 .s-25 i{
-    margin-right:2vh;
+    margin-right:4vh;
+    margin-left:-2vh;
     font-size:32px !important;
 }
 .hire-sub{

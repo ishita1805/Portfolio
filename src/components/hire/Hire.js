@@ -4,8 +4,10 @@ import 'aos/dist/aos.css';
 import Header from '../header/Header'
 import Button from '../button/Button'
 import './hire.css'
+import { useTranslation } from 'react-i18next';
 
 const Hire = () => {
+    const { t } = useTranslation();
     useEffect(() => {
         AOS.init({
             duration: 700,
@@ -18,11 +20,11 @@ const Hire = () => {
                 <input placeholder='Name'/>
                 <input placeholder='Contact Number'/>
                 <textarea placeholder='Query'/>
-                <Button label='Send A message' width='w-100' color='bt-yl-f'/>
+                <Button label={t('msg')} width='w-100' color='bt-yl-f'/>
             </form>
             <div className='hire-cont'>
-                <Header head='Hire Me' color='red'/>
-                <p  data-aos='fade-up' className='hire-sub'>Or just drop a message</p>
+                <Header head={t('hire')} color='red'/>
+                <p  data-aos='fade-up' className='hire-sub'>{t('hire-subh')}</p>
                 <p  data-aos='fade-up'>
                     get molestie dignissim morbi vel purus. Id proin vulputate ultrices bibendum.
                     Posuere nunc cras elementum id molestie gravida. Ultrices egestas eget arcu scelerisque enim quis ornare faci

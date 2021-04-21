@@ -2,21 +2,23 @@ import React from 'react'
 import './heading.css'
 import Button from '../button/Button'
 import Typewriter from 'typewriter-effect'
+import { useTranslation } from 'react-i18next';
 
 const Heading = () => {
+    const { t } = useTranslation();
     return (
         <div className='heading'>
             <h1>
-               <span className='head-span-1'>I am </span> 
+               <span className='head-span-1'>{t('title')}</span> 
                <span>
-                    <span className='head-span'>Ishita.</span>
+                    <span className='head-span'> Ishita.</span>
                </span>
             </h1>
             <div className='underline'></div>
             <p className='tag'>
                 <Typewriter 
                     options={{
-                        strings: ['3rd Year Undergrad & Full Stack Developer '],
+                        strings: [t('tag1'),t('tag2'),t('tag3')],
                         autoStart: true,
                         loop: true,
                         delay: 100,
@@ -28,7 +30,7 @@ const Heading = () => {
                 <Button 
                 small='h-a-small' 
                 color='bt-y-f' 
-                label='Hire Me' 
+                label={t('hire')} 
                 fill={true}
                 internal={0}
                 id='hire'
@@ -36,7 +38,7 @@ const Heading = () => {
                 <Button 
                 small='h-a-small' 
                 color='bt-y-l' 
-                label='My Work' 
+                label={t('work')} 
                 fill={false}
                 internal={0}
                 id='project'/>

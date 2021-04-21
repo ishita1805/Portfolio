@@ -6,7 +6,10 @@ import techList from '../../data/techList'
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import resume from '../../assets/resume.pdf'
+import { useTranslation } from 'react-i18next';
+
 const About = () => {
+    const { t } = useTranslation();
     useEffect(() => {
         AOS.init({
             duration: 600,
@@ -18,7 +21,7 @@ const About = () => {
         <div id='about'>
 
             <div className='about-cont white'>
-              <Header head='About Me' color='red' theme='light'/>
+              <Header head={t('abouth')} color='red' theme='light'/>
                 <p data-aos='fade-up' className='about-p'>
                     get molestie dignissim morbi vel purus. Id proin vulputate ultrices bibendum.
                     Posuere nunc cras elementum id molestie gravida. Ultrices egestas eget arcu scelerisque enim quis ornare faci
@@ -32,7 +35,7 @@ const About = () => {
             </div>
 
             <div className='about-cont yellow'>
-                <h2 data-aos='fade-up'>Work Experience</h2>
+                <h2 data-aos='fade-up'>{t('workh')}</h2>
                 <p data-aos='fade-up' className='about-p-2'>
                     get molestie dignissim morbi vel purus. Id proin vulputate ultrices bibendum.<br/>
                     <span>December 2018 - Present</span>
@@ -48,7 +51,7 @@ const About = () => {
             </div>
 
             <div className='about-cont white'>
-                <h2 data-aos='fade-up'>My Tech Stack</h2>
+                <h2 data-aos='fade-up'>{t('techh')}</h2>
                 <div className='tech'>
                 {   
                     techList.map((url)=>(
@@ -58,7 +61,7 @@ const About = () => {
                 </div>
                 <div data-aos='fade-up' className='buttons'>
                     <Button label='fa fa-github' icon={true} color='bt-r-f' fill={true} id='https://github.com/ishita1805'/>
-                    <Button label='My Resume' color='bt-r-l' fill={false} id={resume}/>
+                    <Button label={t('resume')} color='bt-r-l' fill={false} id={resume}/>
                 </div>
                 <br/>
                 <br/>
