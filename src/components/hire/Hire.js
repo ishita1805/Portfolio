@@ -4,10 +4,16 @@ import 'aos/dist/aos.css';
 import Header from '../header/Header'
 import Button from '../button/Button'
 import './hire.css'
+import { useForm } from 'react-hook-form';
 import { useTranslation } from 'react-i18next';
 
 const Hire = () => {
     const { t } = useTranslation();
+    const { register, handleSubmit, errors } = useForm();
+
+    const onSubmit = (data) => {
+       console.log(data);
+    };
     useEffect(() => {
         AOS.init({
             duration: 700,
@@ -16,10 +22,13 @@ const Hire = () => {
     }, [])
     return (
         <div id='hire'>
-            <form className='form'>
-                <input placeholder='Name'/>
-                <input placeholder='Contact Number'/>
-                <textarea placeholder='Query'/>
+            <form className='form' onSubmit={handleSubmit(onSubmit)}>
+                <input name="name" placeholder='Name' type='text' ref={register({ required: true })}/>
+                {errors.name?<span className='error'>Name is Required</span>:null}
+                <input name="number" type='number' placeholder='Contact Number'  ref={register({ required: true })}/>
+                {errors.number?<span className='error'>Number is Required</span>:null}
+                <textarea name="query" type='text' placeholder='Query'  ref={register({ required: true })}/>
+                {errors.query?<span className='error'>Message is Required</span>:null}
                 <Button label={t('msg')} width='w-100' color='bt-yl-f'/>
             </form>
             <div className='hire-cont'>

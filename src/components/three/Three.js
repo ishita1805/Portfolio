@@ -1,39 +1,28 @@
 import * as THREE from 'three'
-import { TextureLoader } from "three";
-import React, { Suspense, useMemo } from 'react'
-import { Canvas, useLoader  } from 'react-three-fiber'
-import { MeshWobbleMaterial } from "@react-three/drei";
-import vector from '../../assets/man.png'
+import React, { Suspense } from 'react'
+import { Canvas, useLoader } from 'react-three-fiber'
+import img from '../../assets/man.png'
 
 const Image = () =>{
-    
-    // const texture = useLoader(THREE.TextureLoader, vector)
-    // const texture = useMemo(() => new TextureLoader().load(vector), []);
-    const texture = useLoader(THREE.ImageLoader, vector)
-    return <mesh>
-        <MeshWobbleMaterial
-            attach="material"
-            factor={1} // Strength, 0 disables the effect (default=1)
-            speed={10} // Speed (default=1)
-            map={texture}
-        />
+    const texture = useLoader(THREE.TextureLoader, img)
+  return (
+    <mesh>
+      <planeBufferGeometry attach="geometry" args={[5.8, 7.8]} />
+      <meshBasicMaterial attach="material" map={texture} toneMapped={false} />
     </mesh>
-   
+  )
 }
 
 const Three = () => {
     return (
+        <div className='landing-vector-1'>
         <Canvas>
             <Suspense fallback={null}>
                 <Image/>
             </Suspense>
         </Canvas>
+        </div>
     )
 }
 
 export default Three
-
-
-    // {/* <div> */}
-            // {/* <img alt='man' src={vector} className='landing-vector'/> */}
-    // {/* </div> */}

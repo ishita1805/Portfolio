@@ -122,13 +122,13 @@ button:hover {
         padding-right:3vh;
     }
     .line-button{
-        font-size:17px;
-        padding:1.75vh 3vh;
+        font-size:16px;
+        padding:1.75vh 2vh;
         margin-right:2vh;
     }
     .filled-button{
-        padding:2vh 3vh;
-        font-size:17px;
+        padding:2vh 2vh;
+        font-size:16px;
     }
     .filled-button-i i{
         font-size:25px;
