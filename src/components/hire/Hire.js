@@ -29,6 +29,7 @@ const Hire = () => {
                 {errors.number?<span className='error'>Number is Required</span>:null}
                 <textarea name="query" type='text' placeholder='Query'  ref={register({ required: true })}/>
                 {errors.query?<span className='error'>Message is Required</span>:null}
+                <br/>
                 <Button label={t('msg')} width='w-100' color='bt-yl-f'/>
             </form>
             <div className='hire-cont'>

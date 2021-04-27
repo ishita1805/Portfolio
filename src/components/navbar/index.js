@@ -13,7 +13,7 @@ const Navbar = ({navList,...props}) => {
         <div className="small-nav">
           <div className="nav-cross" onClick={()=>setNavState(!nav)}>
             <div className={nav?"new-1 cross":"cross"}></div>
-            <div className={nav?"new-2":"cross"}></div>
+            <div className="cross"></div>
             <div className={nav?"new-3 cross":"cross"}></div>
           </div>
         </div>
