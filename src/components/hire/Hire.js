@@ -5,10 +5,9 @@ import Header from '../header/Header'
 import Button from '../button/Button'
 import './hire.css'
 import { useForm } from 'react-hook-form';
-import { useTranslation } from 'react-i18next';
 
 const Hire = () => {
-    const { t } = useTranslation();
+
     const { register, handleSubmit, errors } = useForm();
 
     const onSubmit = (data) => {
@@ -30,11 +29,11 @@ const Hire = () => {
                 <textarea name="query" type='text' placeholder='Query'  ref={register({ required: true })}/>
                 {errors.query?<span className='error'>Message is Required</span>:null}
                 <br/>
-                <Button label={t('msg')} width='w-100' color='bt-yl-f'/>
+                <Button label='Send A Message' width='w-100' color='bt-yl-f'/>
             </form>
             <div className='hire-cont'>
-                <Header head={t('hire')} color='red'/>
-                <p  data-aos='fade-up' className='hire-sub'>{t('hire-subh')}</p>
+                <Header head='Hire Me' color='red'/>
+                <p  data-aos='fade-up' className='hire-sub'>Or just drop a message</p>
                 <p  data-aos='fade-up'>
                     get molestie dignissim morbi vel purus. Id proin vulputate ultrices bibendum.
                     Posuere nunc cras elementum id molestie gravida. Ultrices egestas eget arcu scelerisque enim quis ornare faci

@@ -1,4 +1,4 @@
-import atishi from '../assets/p1.jpg'
+import atishi from '../assets/p1.webp'
 
 const project = [
     {

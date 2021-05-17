@@ -10,7 +10,7 @@
 }
 .landing-vector{
     min-width:300px;
-    background:pink;
+    /* background:pink; */
     margin-right:15vh;
     /* min-height:60vh; */
     max-height:88vh;

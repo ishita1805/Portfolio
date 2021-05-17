@@ -1,22 +1,22 @@
 const navList = [
     {
         id: 'about',
-        label: 'abouth',
+        label: 'About',
         internal: 'true',
     },
     {
         id: 'project',
-        label: 'projecth',
+        label: 'Project',
         internal: 'true',
     },
     {
         id: 'hire',
-        label: 'hire',
+        label: 'Hire',
         internal: 'true',
     },
     {
         id: 'freelance',
-        label: 'freelance',
+        label: 'Freelance',
         internal: 'true',
     },
 ]

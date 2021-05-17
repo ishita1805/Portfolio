@@ -3,13 +3,12 @@ import './freelancing.css'
 import Header from '../header/Header'
 import FreelanceCard from '../freelanceCard/FreelanceCard'
 import freelanceList from '../../data/freelanceList'
-import { useTranslation } from 'react-i18next';
 
 const Frreelancing = () => {
-    const { t } = useTranslation();
+
     return (
         <div id='freelance'>
-            <Header head={t('freelance')} color='blue'/>
+            <Header head='Freelancing' color='blue'/>
             <br/><br/>
            {freelanceList.map((item) =>(
                 <FreelanceCard 

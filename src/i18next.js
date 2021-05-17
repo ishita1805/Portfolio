@@ -15,6 +15,9 @@ i18n
     whiteList: Languages,
     interpolation: {
       escapeValue: false, 
+    },
+    react: { 
+      useSuspense: false 
     }
   });
 

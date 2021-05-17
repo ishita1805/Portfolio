@@ -4,14 +4,13 @@ import Button from '../button/Button'
 import ProjectCard from '../projectCard/ProjectCard'
 import './project.css'
 import ProjectList from '../../data/projectList'
-import { useTranslation } from 'react-i18next';
 
 const Project = () => {
-    const { t } = useTranslation();
+
 
     return (
         <div id='project'>
-            <Header head={t('projecth')} color='green' theme='dark'/>
+            <Header head='My Projects' color='green' theme='dark'/>
            
             <div className='projects-grid'>
                 {
@@ -30,7 +29,7 @@ const Project = () => {
             <center>
                 <Button 
                 color='bt-g-l' 
-                label={t('art')} 
+                label="View My Art" 
                 fill={false}
                 id='https://www.instagram.com/artiishiii.__/'/>
             </center>

@@ -15,11 +15,9 @@
 .head-span{
     font-size:95px;
     padding:0;
-    background:url('../../assets/ishita.png');
+    background:url('../../assets/ishita.webp');
     background-repeat: repeat;
     background-clip: text;
-    /* background-size: 100% 280px; */
-    /* background-position:11% -12%; */
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     font-weight: 800;
