@@ -52,6 +52,7 @@
 }
 .row i{
     margin-right:1vh;
+    font-display: fallback;
     font-size:23px;
 }
 .project-card:hover {

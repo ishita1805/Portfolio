@@ -6,9 +6,11 @@ button{
 }
 .filled-button i, .line-button i{
     margin-left:4vh;
+    font-display: fallback;
     font-size:20px;
 }
 .filled-button-i i{
+    font-display: fallback;
     font-size:25px;
 }
 
@@ -22,6 +24,7 @@ button{
     font-weight:600;
 }
 .filled-button-i{
+    font-display: fallback;
     margin:0;
     padding:1.6vh 2.2vh;
     color:rgb(255, 255, 255);
@@ -99,6 +102,7 @@ button:hover {
 
 @media screen and (max-width:600px){
     button i{
+        font-display: fallback;
         margin-left:3vh;
     }
     button:hover {
@@ -115,6 +119,7 @@ button:hover {
 @media screen and (max-width:600px){
     button i{
         margin-left:1vh;
+        font-display: fallback;
     }
     button:hover {
         transition:0.5s;
@@ -131,6 +136,7 @@ button:hover {
         font-size:16px;
     }
     .filled-button-i i{
+        font-display: fallback;
         font-size:25px;
         margin:0;
     }

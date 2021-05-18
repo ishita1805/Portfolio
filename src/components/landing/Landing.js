@@ -1,9 +1,10 @@
 import React from 'react'
+import vector from '../../assets/man.webp'
 import './landing.css'
 import Icons from '../icons/Icons'
 import Heading from '../heading/Heading'
 import SideNav from '../sideNav/SideNav'
-import vector from '../../assets/man.webp'
+
 // import Image from '../three/Three'
 
 const Landing = () => {

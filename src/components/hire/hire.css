@@ -75,6 +75,7 @@ textarea{
 }
 .s-25 i{
     margin-right:4vh;
+    font-display: fallback;
     margin-left:-2vh;
     font-size:32px !important;
 }
