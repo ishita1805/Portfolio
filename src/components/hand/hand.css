@@ -1,0 +1,20 @@
+.wave-hand{
+    position:absolute;
+    bottom:0;
+    height:45vh;
+    left:10vh;
+    margin-bottom:-3vh;
+    width:auto;
+    user-select: none;
+}
+@media screen and (max-width:1200px) {
+    .wave-hand{
+        height:40vh;
+        left:5vh;
+    }
+}
+@media screen and (max-width:1000px) {
+    .wave-hand{
+       display: none;
+    }
+}

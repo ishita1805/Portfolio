@@ -4,8 +4,9 @@ import { NavLink as LinkRouter } from "react-router-dom";
 import { Link } from "react-scroll";
 // import navList from '../../data/homeNav'
 
-const Navbar = ({navList,...props}) => {
+const Navbar = ({navList,shadow,...props}) => {
     const [nav,setNavState] = useState(false);
+    console.log(shadow);
     return (
         <>
         <div className="small-nav">
@@ -31,7 +32,7 @@ const Navbar = ({navList,...props}) => {
             }
         </div> 
 
-        <div className="Navigation2">
+        <div className={`Navigation2 ${shadow?'nav-shadow':null}`}>
             {
                 navList.map((item)=>{
                     if(item.internal === 'true')

@@ -29,7 +29,7 @@ const Project = () => {
             <center>
                 <Button 
                 color='bt-g-l' 
-                label="View My Art" 
+                label="Read my blog" 
                 fill={false}
                 id='https://www.instagram.com/artiishiii.__/'/>
             </center>

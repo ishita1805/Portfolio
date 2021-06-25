@@ -1,25 +1,100 @@
-import graphql from '../assets/graphql.png'
-import node from '../assets/node.png'
-import react from '../assets/react.png'
-import mongo from '../assets/mongo.png'
-import sql from '../assets/sql.png'
-import py from  '../assets/py.png'
-import docker from '../assets/docker.png'
-import ps from '../assets/ps.png'
-import ai from '../assets/ai.png'
-import figma from'../assets/figma.png'
+import graphql from '../assets/graphql.webp'
+import node from '../assets/node.webp'
+import react from '../assets/react.webp'
+import mongo from '../assets/mongo.webp'
+import sql from '../assets/sql.webp'
+import py from  '../assets/py.webp'
+import docker from '../assets/docker.webp'
+import ps from '../assets/ps.webp'
+import ai from '../assets/ai.webp'
+import figma from'../assets/figma.webp'
+import js from '../assets/js.webp'
+import pg from '../assets/pg.webp'
+import go from '../assets/go.webp'
+import postman from '../assets/postman.webp'
+import selenium from '../assets/selenium.webp'
+// import flutter from '../assets/flutter.webp'
+// import ts from '../assets/ts.webp'
+// import nginx from '../assets/nginx.webp'
+// import aws from '../assets/aws.webp'
 
 const tech = [
-     graphql,
-     node,
-     react,
-     mongo,
-     sql,
-     py,
-     docker,
-     ps,
-     ai,
-     figma
+     {
+          url:js,
+          label:'Javascript'
+     },
+     // {
+     //      url:ts,
+     //      label:'Typescript'
+     // },
+     {
+          url:graphql,
+          label:'GraphQL'
+     },
+     {
+          url:node,
+          label:'Node.js'
+     },
+     {
+          url:go,
+          label:'Golang'
+     },
+     {
+          url:react,
+          label:'React.js'
+     },
+     {
+          url:pg,
+          label:'PostgreSQL'
+     },
+     {
+          url:mongo,
+          label:'Mongo DB'
+     },
+     {
+          url:sql,
+          label:'MySQL'
+     },
+     {
+          url:selenium,
+          label:'Selenium'
+     },
+     {
+          url:py,
+          label:'Python'
+     },
+     // {
+     //      url:flutter,
+     //      label:'Flutter'
+     // },
+     {
+          url:postman,
+          label:'Postman'
+     },
+     {
+          url:docker,
+          label:'Docker'
+     },
+     // {
+     //      url:nginx,
+     //      label:'Nginx'
+     // },
+     // {
+     //      url:aws,
+     //      label:'Amazon Web Services'
+     // },
+     {
+          url:ps,
+          label:'Adobe Photoshop'
+     },
+     {
+          url:ai,
+          label:'Adobe Illustrator'
+     },
+     {
+          url:figma,
+          label:'Figma'
+     }
 ]
 
 export default tech;

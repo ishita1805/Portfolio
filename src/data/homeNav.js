@@ -1,7 +1,7 @@
 const navList = [
     {
         id: 'about',
-        label: 'About',
+        label: 'About Me',
         internal: 'true',
     },
     {
@@ -11,12 +11,12 @@ const navList = [
     },
     {
         id: 'hire',
-        label: 'Hire',
+        label: 'Connect',
         internal: 'true',
     },
     {
         id: 'freelance',
-        label: 'Freelance',
+        label: 'Freelancing',
         internal: 'true',
     },
 ]

@@ -52,10 +52,14 @@ const About = () => {
 
             <div className='about-cont white'>
                 <h2 data-aos='fade-up'>My Tech Stack</h2>
+                <p  data-aos='fade-up' className='tools-intro'>Tools and technologies i love working with</p>
                 <div className='tech'>
                 {   
                     techList.map((url)=>(
-                        <img data-aos='fade-up' src={url} className='image-tech' alt='tech'/>
+                        <div data-aos='fade-up' className='tech-cont'>
+                        <img src={url.url} className='image-tech' alt='tech'/>
+                        <span className='tech-placeholder'>{url.label}</span>
+                        </div>
                     ))
                 }
                 </div>

@@ -2,7 +2,6 @@
     height:60vh;
     width:25vh;
     border-radius:60vh 0 0 60vh;
-    margin-right:-8vh;
     display:flex;
     flex-direction:column;
     z-index:1100;
@@ -11,13 +10,15 @@
     padding-right:5vh;
     justify-content:center;
     background: #FF6363;
-    transition:0.5s;
+    position:absolute;
+    right:-7vh;
+    /* transition:0.5s; */
 }
 .icons i{
     color:white;
     font-display: fallback;
     margin:2vh 0;
-    transition:0.5s;
+    /* transition:0.5s; */
     cursor:none !important;
     font-size:26px;
 }
@@ -26,45 +27,55 @@ a{
 }
 .icons i:hover{
     color:rgb(255, 194, 194) !important;
-    transition:0.5s;
+    /* transition:0.5s; */
 }
 .icons:hover{
    background:none;
    border: solid 2px #FF6363;;
-   transition:0.5s;
+   /* transition:0.5s; */
 }
 .icons:hover i{
     color:#FF6363;
     font-display: fallback;
-    transition:0.5s;
+    /* transition:0.5s; */
  }
  @media screen and (max-width:800px){
     .icons{
         height:50vh;
         width:22vh;
         border-radius:60vh 0 0 60vh;
-        margin-right:-6vh;
         padding-right:3vh;
         display:flex;
         flex-direction:column;
         align-items:center;
         justify-content:center;
         background: #FF6363;
-        transition:0.5s;
     }  
 }
 
-@media screen and (max-width:500px){
+@media screen and (max-width:700px){
     .icons{
-        height:40vh;
-        width:13vh;
-        border-radius:60vh 0 0 60vh;
-        margin-right:-9vh;
-        padding-right:7vh;
+        width:32vw;
+        height:7vh;
+        border-radius:0 0;
+        margin:0;
+        padding:0;
+        bottom:4vh;
+        background: none;
+        left:0;
+        right:0;
+        display:flex;
+        flex-direction:row; 
     }  
     .icons i{
-        margin:1vh 0;
+        margin:1vh;
+        margin-right:1.5vh;
         font-size:23px;
+        color:#FF6363;
         font-display: fallback;
     }
+    .icons:hover{
+        border:none;
+     }
 }
+

@@ -5,7 +5,7 @@
     display:flex;
     align-items:center;
     border:solid 2px rgb(255, 32, 69);
-    background:none;
+    background:rgb(255, 32, 69);
     justify-content:center;
     position:fixed;
     bottom:3vh;
@@ -13,8 +13,9 @@
     z-index:3000;
 }
 .move-up-icon:hover {
-    background:rgb(255, 32, 69);
-    color:white;
+    background:none;
+    color:rgb(255, 32, 69);
+    border:solid 2px rgb(255, 32, 69);
 }
 .hide-ic{
     display:none;
@@ -23,11 +24,11 @@
     font-size:24px;
     margin-top:-0.5vh;
     font-display: fallback;
-    color:rgb(255, 32, 69);
+    color:white;
 }
 .move-up-icon:hover i{
     font-display: fallback;
-    color:white;
+    color:rgb(255, 32, 69);
 }
 @media screen and (max-width:600px){
     .move-up-icon{

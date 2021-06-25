@@ -15,7 +15,7 @@ const Hire = () => {
     };
     useEffect(() => {
         AOS.init({
-            duration: 700,
+            duration: 1200,
             easing: 'ease-in-out',
           });
     }, [])

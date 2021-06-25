@@ -1,7 +1,7 @@
 .cursor{
   width: 40px;
   height: 40px;
-  border: 2px solid #ffc124;
+  border: 2px solid #ff6262;
   border-radius: 100%;
   position: fixed;
   transform: translate(-50%, -50%);
@@ -13,13 +13,13 @@
 .cursor-inner{
   width: 15px;
   height: 15px;
-  background: #ffc124;
+  background: #55b3ff;
   /* border: 2px solid #F8CB59; */
   border-radius: 100%;
   position: fixed;
   transform: translate(-50%, -50%);
   pointer-events: none;
-  transition: all 0s ease;
+  transition: all 0s ease-in-out;
   z-index: 9999;
   /* mix-blend-mode: difference; */
 }

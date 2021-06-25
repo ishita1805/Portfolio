@@ -31,7 +31,7 @@
 .project-card h3{
     font-family: 'Montserrat', sans-serif;
     font-weight:700;
-    font-size:25px;
+    font-size:20px;
     margin:2.5vh 2vh 0 2vh;
 }
 .text-switch{
@@ -41,7 +41,7 @@
     display:none; 
 }
 .project-card p{
-    font-size:17px;
+    font-size:16px !important;
     color:rgb(68, 68, 68);
     margin:1vh 2vh 0 2vh;
 }
@@ -58,6 +58,9 @@
 .project-card:hover {
    box-shadow:0 0 12px  rgba(166, 255, 218, 0.507);
 }
+.project-card:hover p{
+    font-size:15px !important;
+ }
 .index-cards{
     font-size:39px;
     color:rgb(226, 226, 226);
@@ -80,12 +83,23 @@
 
 @media screen and (max-width:1000px){
     .project-card{
-        margin-bottom:10vh;
-        
+        margin-bottom:10vh;   
     }
 }
 @media screen and (max-width:700px){
     .project-card{
         margin-bottom:7vh;
+        max-width:80vw;
+    }
+    .img-holder{
+        max-width:80vw;
+        height:15vh;
+    }
+    .img-holder img{
+        width:100%;
+        height:auto;
+    }
+    .hr-bar-gr{
+        max-width:80vw;
     }
 }
