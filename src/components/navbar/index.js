@@ -37,11 +37,11 @@ const Navbar = ({navList,shadow,...props}) => {
                 navList.map((item)=>{
                     if(item.internal === 'true')
                     return <Link activeClass="active" to={item.id} spy={true} offset={-57} smooth={true} duration={500}>
-                                <span onClick={()=>setNavState(!nav)}>{item.label}</span>
+                                <span >{item.label}</span>
                             </Link>
 
                     else return <LinkRouter className='navlink' to={item.id} exact>
-                                    <span onClick={()=>setNavState(!nav)}>{item.label}</span>
+                                    <span >{item.label}</span>
                                 </LinkRouter>
                 })
             }
