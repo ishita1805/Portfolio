@@ -1,8 +1,7 @@
 #project {
     background:#00030D;
-    min-height:90vh;
     width:92vw;
-    padding:6vh 4vw 8vh 4vw;
+    padding:7vh 4vw 8vh 4vw;
     border-bottom:solid 2vh #59F8B5;
 }
 .projects-grid{

@@ -5,7 +5,7 @@ import Landing from '../components/landing/Landing'
 import About from '../components/about/About'
 import Project from '../components/projects/Project'
 import Hire from '../components/hire/Hire'
-import Frreelancing from '../components/freelancing/Frreelancing'
+import Talks from '../components/talks/Talks'
 import ScrollComp from '../components/scrollIcon/Scroll'
 import * as Scroll from 'react-scroll';
 
@@ -32,7 +32,7 @@ const Home = () => {
             <About/>
             <Project/>
             <Hire/>
-            <Frreelancing/>
+            <Talks/>
         </div>
     )
 }

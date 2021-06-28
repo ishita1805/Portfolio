@@ -14,6 +14,7 @@ const FreelanceCard = (props) => {
         <div className={`${props.align}`}>
             <div className='content-fr'>
                 <h2  data-aos='fade-up'>{props.title}</h2>
+                <span data-aos='fade-up'>{props.date}</span>
                 <p  data-aos='fade-up'>
                 {props.p1}
                 </p>

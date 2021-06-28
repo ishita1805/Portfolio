@@ -15,8 +15,8 @@ const navList = [
         internal: 'true',
     },
     {
-        id: 'freelance',
-        label: 'Freelancing',
+        id: 'talks',
+        label: 'Talks and Events',
         internal: 'true',
     },
 ]

@@ -23,26 +23,29 @@ const Hire = () => {
         <div id='hire'>
             <form className='form' onSubmit={handleSubmit(onSubmit)}>
                 <input name="name" placeholder='Name' type='text' ref={register({ required: true })}/>
+                <br/>
                 {errors.name?<span className='error'>Name is Required</span>:null}
                 <input name="number" type='number' placeholder='Contact Number'  ref={register({ required: true })}/>
+                <br/>
                 {errors.number?<span className='error'>Number is Required</span>:null}
-                <textarea name="query" type='text' placeholder='Query'  ref={register({ required: true })}/>
-                {errors.query?<span className='error'>Message is Required</span>:null}
+                <textarea name="query" type='text' placeholder='Message'  ref={register({ required: true })}/>
+                <br/>
+                {errors.query?<><span className='error'>Message is Required</span><br/></>:null}
                 <br/>
                 <Button label='Send A Message' width='w-100' color='bt-yl-f'/>
             </form>
             <div className='hire-cont'>
-                <Header head='Hire Me' color='red'/>
-                <p  data-aos='fade-up' className='hire-sub'>Or just drop a message</p>
+                <Header head='Hire me' color='red'/>
+                <p  data-aos='fade-up' className='hire-sub'>Or collaborate with me</p>
                 <p  data-aos='fade-up'>
-                    get molestie dignissim morbi vel purus. Id proin vulputate ultrices bibendum.
-                    Posuere nunc cras elementum id molestie gravida. Ultrices egestas eget arcu scelerisque enim quis ornare faci
-                    Risus eget diam nisl ipsum nibh tempus enim odio. Porttitor orci augue integer eget mi egestas habitant ornare velit. 
-                    Nullam id sem posuere 
+                   I am looking for my next innovative project. If you are a 
+                   firm or a fellow developer who shares the same interests as 
+                   me, please leave a message and i would love to get in touch with you.
                 </p>
                 <p  data-aos='fade-up'>
-                    get molestie dignissim morbi vel purus. Id proin vulputate ultrices bibendum.
-                    Posuere nunc   
+                   I am interested in product development / devOPS / UI interface design roles. 
+                   I am also open to conducting workshops / sessions on developement related topics.
+                   Let's work on the big thing together ;)
                 </p>
                 <div  data-aos='fade-up' className='row s-25'>
                     <a target='__blank' href='/'><i className='fa fa-github'></i></a>

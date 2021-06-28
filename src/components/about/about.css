@@ -25,6 +25,9 @@
     align-items:center;
     justify-content:flex-start;
 }
+.buttons-about{
+    display:flex;
+}
 .image-tech{
     height:auto;
     width:6vh;
@@ -62,7 +65,7 @@
 .about-p{
     margin-top:5vh;
     font-size:17px;
-    width:80%;
+    width:95%;
 }
 .about-p-2{
     margin:1vh 0;

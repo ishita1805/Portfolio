@@ -15,8 +15,8 @@ import postman from '../assets/postman.webp'
 import selenium from '../assets/selenium.webp'
 // import flutter from '../assets/flutter.webp'
 // import ts from '../assets/ts.webp'
-// import nginx from '../assets/nginx.webp'
-// import aws from '../assets/aws.webp'
+import nginx from '../assets/nginx.webp'
+import aws from '../assets/aws.webp'
 
 const tech = [
      {
@@ -75,14 +75,14 @@ const tech = [
           url:docker,
           label:'Docker'
      },
-     // {
-     //      url:nginx,
-     //      label:'Nginx'
-     // },
-     // {
-     //      url:aws,
-     //      label:'Amazon Web Services'
-     // },
+     {
+          url:nginx,
+          label:'Nginx'
+     },
+     {
+          url:aws,
+          label:'Amazon Web Services'
+     },
      {
           url:ps,
           label:'Adobe Photoshop'

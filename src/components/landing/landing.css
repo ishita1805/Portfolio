@@ -70,25 +70,47 @@
 @media screen and (max-width:1000px){
     #home h1{
         font-size:50px;
-        margin-left:7vh;
+        padding:0;
+        margin-left:5vh;
     }
     #home p{
-        margin-left:7vh;
+        padding:0;
+        margin-left:5vh;
     }
     #home{
         align-items:flex-start;
         text-align: left;
     }
+    .buttons{
+       padding:0;
+       margin-left:5vh;
+    }
 }
 @media screen and (max-width:900px){
     #home h1{
         font-size:43px;
-        margin-left:5vh;
         width:70%;
     }
     #home p{
-        margin-left:5vh;
         width:60%;
+    }
+}
+@media screen and (max-width:700px){
+    #home h1{
+        font-size:43px;
+        width:70%;
+        margin-left:0;
+    }
+    #home p{
+        width:60%;
+        margin-left:0;
+    }
+    .buttons{
+        margin-left:0;
+    }
+    #home{
+        align-items:center;
+        text-align: center;
     }
 }
 @media screen and (max-width:500px){

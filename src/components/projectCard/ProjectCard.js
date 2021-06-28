@@ -22,8 +22,8 @@ const ProjectCard = (props) => {
             <p className='text-switch'>{props.tag.substring(0,35)}..</p>
             <p className='text-switch-1'>{props.tag}</p>
             <div className='row'>
-                <a target='__blank' href={props.git}><i className='fa fa-github'></i></a>
-                <a target='__blank' href={props.web}><i className='fa fa-globe'></i></a>
+               {props.git? <a target='__blank' href={props.git}><i className='fa fa-github'></i></a>:null}
+               {props.web?<a target='__blank' href={props.web}><i className='fa fa-globe'></i></a>:null}
             </div>
         </div>
         </Tilt>

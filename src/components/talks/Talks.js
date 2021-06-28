@@ -1,5 +1,5 @@
 import React from 'react'
-import './freelancing.css'
+import './talks.css'
 import Header from '../header/Header'
 import FreelanceCard from '../freelanceCard/FreelanceCard'
 import freelanceList from '../../data/freelanceList'
@@ -7,13 +7,14 @@ import freelanceList from '../../data/freelanceList'
 const Frreelancing = () => {
 
     return (
-        <div id='freelance'>
-            <Header head='Freelancing' color='blue'/>
+        <div id='talks'>
+            <Header head='Talks and Events' color='blue'/>
             <br/><br/>
            {freelanceList.map((item) =>(
                 <FreelanceCard 
                     align={item.align}
                     title={item.title}
+                    date={item.date}
                     p1={item.p1}
                     p2={item.p2}
                     />
