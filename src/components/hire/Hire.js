@@ -23,15 +23,11 @@ const Hire = () => {
         <div id='hire'>
             <form className='form' onSubmit={handleSubmit(onSubmit)}>
                 <input name="name" placeholder='Name' type='text' ref={register({ required: true })}/>
-                <br/>
-                {errors.name?<span className='error'>Name is Required</span>:null}
+                {errors.name?<span className='error'>Name is Required</span>:null} <br/>
                 <input name="number" type='number' placeholder='Contact Number'  ref={register({ required: true })}/>
-                <br/>
-                {errors.number?<span className='error'>Number is Required</span>:null}
+                {errors.number?<span className='error'>Number is Required</span>:null} <br/>
                 <textarea name="query" type='text' placeholder='Message'  ref={register({ required: true })}/>
-                <br/>
-                {errors.query?<><span className='error'>Message is Required</span><br/></>:null}
-                <br/>
+                {errors.query?<span className='error'>Message is Required</span>:null}<br/>
                 <Button label='Send A Message' width='w-100' color='bt-yl-f'/>
             </form>
             <div className='hire-cont'>

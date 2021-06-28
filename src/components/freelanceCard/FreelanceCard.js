@@ -11,7 +11,7 @@ const FreelanceCard = (props) => {
           });
     }, [])
     return (
-        <div className={`${props.align}`}>
+        <div className={`row-sp`}>
             <div className='content-fr'>
                 <h2  data-aos='fade-up'>{props.title}</h2>
                 <span data-aos='fade-up'>{props.date}</span>
@@ -21,9 +21,7 @@ const FreelanceCard = (props) => {
                 <p  data-aos='fade-up'>
                 {props.p2}
                 </p>
-            </div>
-            <div  data-aos='fade-up' className='vid-holder-fr'></div>
-            
+            </div>            
         </div>
     )
 }

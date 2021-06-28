@@ -7,33 +7,27 @@
     align-items:center;
     justify-content:space-between;
 }
+.hire-cont{
+    margin-left:5%;
+    flex-grow: 1;
+    max-width:50%;
+}
+.hire-cont p{
+    width:80%;
+}
+.hire-sub{
+    font-size:22px;
+    color:grey;
+}
 .form{
-    width:45%;
-    margin-right:5%;
-    min-width:450px;
-    /* display:flex;
+    display:flex;
+    width:40%;
+    min-width:500px;
     flex-direction:column;
-    align-items:flex-start;
-    justify-content: flex-start; */
-    /* background: rgb(255, 216, 43); */
 }
 .error{
     font-size:13px;
     color:red;
-}
-input{
-    margin:1vh 0;
-    cursor:pointer;
-    padding:2vh;
-    border:none;
-    outline:none;
-    color:rgb(80, 79, 79);
-    width: 80%;
-    font-family:'Montserrat';
-    font-size:16px;
-    border-left:solid 2vh #FFCF54;
-    background:#F2F2F2;
-    font-weight:400;
 }
 input::placeholder{
     color:rgb(204, 203, 203);
@@ -47,9 +41,23 @@ input::-webkit-inner-spin-button {
 }
 input[type=number] {
     -moz-appearance: textfield;
-  }
+}
+input{
+    cursor:pointer;
+    padding:2vh;
+    border:none;
+    outline:none;
+    color:rgb(80, 79, 79);
+    font-family:'Montserrat';
+    font-size:16px;
+    border-left:solid 1vh #FFCF54;
+    background:#F2F2F2;
+    font-weight:400;
+}
+.row a{
+    color:black;
+}
 textarea{
-    margin:1vh 0;
     cursor:pointer;
     padding:2vh;
     border:none;
@@ -58,75 +66,41 @@ textarea{
     outline:none;
     font-weight:400;
     font-size:16px;
-    width: 80%;
     min-height:30vh;
-    border-left:solid 2vh #FFCF54;
+    border-left:solid 1vh #FFCF54;
+    border-right: solid 1vh #F2F2F2;
     background:#F2F2F2;
     resize:none;
 }
-.hire-cont{
-    margin-left:5%;
-    width:45%;
-    min-height:30vh;
-}
-.hire-cont p{
-    width:90%;
-}
-.row a{
-    color:black;
-}
-.s-25 i{
-    margin-right:4vh;
-    font-display: fallback;
-    margin-left:-2vh;
-    font-size:32px !important;
-}
-.hire-sub{
-    font-size:22px;
-    color:grey;
-}
-@media screen and (max-width:1200px){
-    input{
-        width: 100%;
+@media screen and (max-width:1200px) {
+    .hire-cont{
+        margin-left:5%;
+        flex-grow: 1;
+        max-width:auto;
     }
-    textarea{
-        max-width:100%;
-        width: 100%;
+    .hire-cont p{
+        width:100%;
     }
 }
-@media screen and (max-width:950px){
+@media screen and (max-width:1100px) {
     #hire{
         flex-direction:column-reverse;
-        align-items:center;
-        justify-content:center;
-    }
-    .form{
-        width:100%;
-        margin-right:0%;
+        align-items:flex-start;
+        justify-content:flex-start;
     }
     .hire-cont{
-        margin-left:0%;
-        margin-bottom:5vh;
-        width:100%;
+        margin-left:0;
+        margin-bottom:6vh;
+        max-width:80%;
     }
-    input{
-        min-width:400px;
-        width: 60%;
-    }
-    textarea{
-        max-width:60%;
-        min-width:400px;
-        width: 60%;
+    .form{
+        width:60%;
+        min-width:500px;
     }
 }
-@media screen and (max-width:600px){
-    input{
-        min-width:auto;
-        width: 87%;
-    }
-    textarea{
-        max-width:auto;
-        min-width:87%;
-        width: 87%;
+@media screen and (max-width:600px) {
+    .form{
+        width:97%;
+        min-width:100px;
     }
 }

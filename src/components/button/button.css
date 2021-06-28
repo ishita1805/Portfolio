@@ -13,7 +13,9 @@ button{
     font-display: fallback;
     font-size:25px;
 }
-
+.w-100{
+    width:100%;
+}
 .filled-button{
     margin:0;
     padding:2vh 3vh;

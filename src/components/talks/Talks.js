@@ -10,6 +10,7 @@ const Frreelancing = () => {
         <div id='talks'>
             <Header head='Talks and Events' color='blue'/>
             <br/><br/>
+            <div className='grid-talks'>
            {freelanceList.map((item) =>(
                 <FreelanceCard 
                     align={item.align}
@@ -19,6 +20,7 @@ const Frreelancing = () => {
                     p2={item.p2}
                     />
             ))}
+            </div>
         </div>
     )
 }
