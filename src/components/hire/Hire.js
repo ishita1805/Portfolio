@@ -3,25 +3,44 @@ import AOS from 'aos';
 import 'aos/dist/aos.css';
 import Header from '../header/Header'
 import Button from '../button/Button'
+import axios from 'axios'
 import './hire.css'
 import { useForm } from 'react-hook-form';
 
 const Hire = () => {
-
+    const url = 'https://server-smtp.herokuapp.com/mail/send'
+    // const url = 'http://localhost:8080/mail/send'
     const { register, handleSubmit, errors, reset  } = useForm();
     const [submit, setSubmit] = useState(false);
 
     const onSubmit = (data) => {
-       console.log(data);
        setSubmit(true);
        reset(); 
+       axios({
+        method: 'post',
+        url,
+        data: {
+            "to_id":"ishitakabra1805@gmail.com",
+            "subject":"New message for Ishita",
+            "html":
+            `<body>
+                <p><b>Name: </b>${data.name}</p>
+                <p><b>Number: </b>${data.number}</p>
+                <p><b>Message: </b>${data.query}</p>
+            </body>`
+        }
+      })
+      .then(() =>{})
+      .catch(() => {})
     };
+
     useEffect(() => {
         AOS.init({
             duration: 1200,
             easing: 'ease-in-out',
           });
     }, [])
+    
     return (
         <div id='hire'>
             <form className='form' onSubmit={handleSubmit(onSubmit)}>
