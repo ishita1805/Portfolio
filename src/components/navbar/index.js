@@ -6,7 +6,6 @@ import { Link } from "react-scroll";
 
 const Navbar = ({navList,shadow,...props}) => {
     const [nav,setNavState] = useState(false);
-    console.log(shadow);
     return (
         <>
         <div className="small-nav">

@@ -1,4 +1,4 @@
-import React,{ useEffect } from 'react'
+import React,{ useState,useEffect } from 'react'
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import Header from '../header/Header'
@@ -8,10 +8,13 @@ import { useForm } from 'react-hook-form';
 
 const Hire = () => {
 
-    const { register, handleSubmit, errors } = useForm();
+    const { register, handleSubmit, errors, reset  } = useForm();
+    const [submit, setSubmit] = useState(false);
 
     const onSubmit = (data) => {
        console.log(data);
+       setSubmit(true);
+       reset(); 
     };
     useEffect(() => {
         AOS.init({
@@ -24,11 +27,14 @@ const Hire = () => {
             <form className='form' onSubmit={handleSubmit(onSubmit)}>
                 <input name="name" placeholder='Name' type='text' ref={register({ required: true })}/>
                 {errors.name?<span className='error'>Name is Required</span>:null} <br/>
-                <input name="number" type='number' placeholder='Contact Number'  ref={register({ required: true })}/>
-                {errors.number?<span className='error'>Number is Required</span>:null} <br/>
+                <input name="number" type='number' placeholder='Contact Number'  ref={register({ required: true, minLength:10, maxLength: 10 })}/>
+                {errors.number && errors.number.type === "required" && <span className='error'>Number is Required</span>}
+                {errors.number &&  (errors.number.type === "minLength" || errors.number.type === "maxLength") && <span className='error'>Number should be 10-digit</span> } <br/>
                 <textarea name="query" type='text' placeholder='Message'  ref={register({ required: true })}/>
                 {errors.query?<span className='error'>Message is Required</span>:null}<br/>
-                <Button label='Send A Message' width='w-100' color='bt-yl-f'/>
+                {submit?
+                <b>Thanks for reaching out! I'll get back to you soon 🧁</b>:
+                <Button label='Send A Message' width='w-100' color='bt-yl-f'/>}
             </form>
             <div className='hire-cont'>
                 <Header head='Hire me' color='red'/>
