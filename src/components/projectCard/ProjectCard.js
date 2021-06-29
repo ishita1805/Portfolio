@@ -25,6 +25,7 @@ const ProjectCard = (props) => {
                {props.git? <a target='__blank' href={props.git}><i className='fa fa-github'></i></a>:null}
                {props.web?<a target='__blank' href={props.web}><i className='fa fa-globe'></i></a>:null}
             </div>
+            <br/>
         </div>
         </Tilt>
     )

@@ -23,8 +23,11 @@ const About = () => {
             <div className='about-cont white'>
               <Header head='About Me' color='red' theme='light'/>
                 <p data-aos='fade-up' className='about-p'>
-                    Hi, I am Ishita. A full-stack developer and an artist. I'm pursuing B.Tech from VIT Vellore, in Electronics and Communication Engineering (spl. IoT). I love building software and learning new things. You'll always find me working on a project ;). I enjoy working on user interface design solutions and building fast and responsive web applications.<br/><br/>
-                    I've been a part of several student organizations and am currently the Projects Lead at TEC - VIT, where i mentor students in domains like electronics, development and computer vision by conducting workshops, sessions and building projects.
+                    Hi, I am Ishita. A full-stack developer and an artist. I'm pursuing B.Tech from VIT Vellore, in Electronics and Communication Engineering (spl. IoT). 
+                    I love building software and learning new things. You'll always find me working on a project ;). I have been working with development tools for 1 
+                    year now, With my passion for development and knowledge of domains like IoT Electronics and Image processing i am able to build fast, secure and production grade applications. <br/><br/>
+                    I've been a part of several student organizations and am currently the Projects Lead at TEC - VIT, where i mentor students in domains like electronics, 
+                    development and computer vision by conducting workshops, sessions and building projects.
                     I am also an active member of the Fine Arts Club - VIT.<br/><br/>
                     {/* I love penning down my thoughts! Checkout my blog  where i write about art and development. */}
                     Lookout for my upcoming project! <b>MediumRare</b>, a personal blog, where i will write about art and development.

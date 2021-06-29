@@ -13,6 +13,7 @@ import pg from '../assets/pg.webp'
 import go from '../assets/go.webp'
 import postman from '../assets/postman.webp'
 import selenium from '../assets/selenium.webp'
+import opencv from '../assets/opencv.webp'
 // import flutter from '../assets/flutter.webp'
 // import ts from '../assets/ts.webp'
 import nginx from '../assets/nginx.webp'
@@ -23,10 +24,6 @@ const tech = [
           url:js,
           label:'Javascript'
      },
-     // {
-     //      url:ts,
-     //      label:'Typescript'
-     // },
      {
           url:graphql,
           label:'GraphQL'
@@ -63,10 +60,10 @@ const tech = [
           url:py,
           label:'Python'
      },
-     // {
-     //      url:flutter,
-     //      label:'Flutter'
-     // },
+     {
+          url:opencv,
+          label:'OpenCV'
+     },
      {
           url:postman,
           label:'Postman'
@@ -94,7 +91,15 @@ const tech = [
      {
           url:figma,
           label:'Figma'
-     }
+     },
+     // {
+     //      url:flutter,
+     //      label:'Flutter'
+     // },
+     // {
+     //      url:ts,
+     //      label:'Typescript'
+     // },
 ]
 
 export default tech;
