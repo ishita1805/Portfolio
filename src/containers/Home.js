@@ -1,13 +1,15 @@
-import React,{ useState } from 'react'
+import React,{ lazy, Suspense, useState } from 'react'
 import Nav from '../components/navbar'
 import navList from '../data/homeNav'
 import Landing from '../components/landing/Landing'
 import About from '../components/about/About'
-import Project from '../components/projects/Project'
-import Hire from '../components/hire/Hire'
-import Talks from '../components/talks/Talks'
-import ScrollComp from '../components/scrollIcon/Scroll'
+
 import * as Scroll from 'react-scroll';
+
+const Project = lazy(() => import('../components/projects/Project'));
+const Talks = lazy(() => import('../components/talks/Talks'));
+const ScrollComp = lazy(() => import('../components/scrollIcon/Scroll'));
+const Hire = lazy(() => import('../components/hire/Hire'));
 
 const Home = () => {
     const [hide,setHide] = useState(true);
@@ -27,12 +29,26 @@ const Home = () => {
     return (
         <div>
             <Nav navList={navList} shadow={shadow}/>
-            <ScrollComp hide={hide} onClick={top}/>
+
+            <Suspense fallback={<div></div>}>
+                <ScrollComp hide={hide} onClick={top}/>
+            </Suspense>
+
             <Landing/>
+
             <About/>
-            <Project/>
-            <Hire/>
-            <Talks/>
+
+            <Suspense fallback={<div></div>}>
+                <Project/>
+            </Suspense>
+
+            <Suspense fallback={<div></div>}>
+                <Hire/>
+            </Suspense>
+
+            <Suspense fallback={<div></div>}>
+                <Talks/>
+            </Suspense>
         </div>
     )
 }

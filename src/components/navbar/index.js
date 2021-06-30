@@ -2,7 +2,6 @@ import React, { useState } from 'react'
 import './nav.css'
 import { NavLink as LinkRouter } from "react-router-dom";
 import { Link } from "react-scroll";
-// import navList from '../../data/homeNav'
 
 const Navbar = ({navList,shadow,...props}) => {
     const [nav,setNavState] = useState(false);
@@ -20,7 +19,7 @@ const Navbar = ({navList,shadow,...props}) => {
             {
                 navList.map((item)=>{
                     if(item.internal === 'true')
-                    return <Link activeClass="active" to={item.id} spy={true} offset={0} smooth={true} duration={800}>
+                    return <Link activeClass="active" to={item.id} spy={true} offset={0} smooth={true} duration={1000}>
                                 <span onClick={()=>setNavState(!nav)}>{item.label}</span>
                             </Link>
 
@@ -35,7 +34,7 @@ const Navbar = ({navList,shadow,...props}) => {
             {
                 navList.map((item)=>{
                     if(item.internal === 'true')
-                    return <Link activeClass="active" to={item.id} spy={true} offset={-57} smooth={true} duration={500}>
+                    return <Link activeClass="active" to={item.id} spy={true} offset={-57} smooth={true} duration={1000}>
                                 <span >{item.label}</span>
                             </Link>
 
