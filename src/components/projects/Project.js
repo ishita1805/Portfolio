@@ -2,7 +2,6 @@ import React from 'react'
 import Header from '../header/Header'
 import Button from '../button/Button'
 import ProjectCard from '../projectCard/ProjectCard'
-import './project.css'
 import ProjectList from '../../data/projectList'
 
 const Project = () => {

@@ -1,5 +1,4 @@
 import React from 'react'
-import './talks.css'
 import Header from '../header/Header'
 import FreelanceCard from '../freelanceCard/FreelanceCard'
 import freelanceList from '../../data/freelanceList'

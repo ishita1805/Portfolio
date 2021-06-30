@@ -1,10 +1,8 @@
 import React,{ useState,useEffect } from 'react'
 import AOS from 'aos';
-import 'aos/dist/aos.css';
 import Header from '../header/Header'
 import Button from '../button/Button'
 import axios from 'axios'
-import './hire.css'
 import { useForm } from 'react-hook-form';
 
 const Hire = () => {

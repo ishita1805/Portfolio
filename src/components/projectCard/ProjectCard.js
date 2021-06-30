@@ -1,5 +1,4 @@
 import React from 'react'
-import './projectCard.css'
 import Tilt from '../tilt/Tilt';
 
 const ProjectCard = (props) => {

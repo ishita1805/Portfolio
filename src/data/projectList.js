@@ -36,7 +36,7 @@ const project = [
         githubUrl:'https://github.com/ishita1805/ResuME',
         webUrl:false,
         img: resume,
-        tagline:'Generate and deploy your website in one click, using your linkedin & github profile, also links your domain to the website',
+        tagline:'Generate and deploy your website in one click, using your linkedin profile, also links your website to the domain',
     },
     {
         title:'Typeface Editor',

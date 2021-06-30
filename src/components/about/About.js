@@ -4,7 +4,6 @@ import './about.css'
 import Button from '../button/Button'
 import techList from '../../data/techList'
 import AOS from 'aos';
-import 'aos/dist/aos.css';
 import resume from '../../assets/resume.pdf'
 
 

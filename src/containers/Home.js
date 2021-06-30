@@ -3,8 +3,8 @@ import Nav from '../components/navbar'
 import navList from '../data/homeNav'
 import Landing from '../components/landing/Landing'
 import About from '../components/about/About'
-
 import * as Scroll from 'react-scroll';
+import '../components/defered.css'
 
 const Project = lazy(() => import('../components/projects/Project'));
 const Talks = lazy(() => import('../components/talks/Talks'));
