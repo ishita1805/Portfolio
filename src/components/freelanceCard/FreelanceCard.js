@@ -1,6 +1,5 @@
 import React,{ useEffect } from 'react'
 import AOS from 'aos';
-import './freelanceCard.css'
 
 const FreelanceCard = (props) => {
     useEffect(() => {
