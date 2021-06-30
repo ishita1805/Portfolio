@@ -22,6 +22,7 @@ button{
     color:rgb(31, 31, 31);
     margin-right:3vh;
     font-family: 'Montserrat';
+    font-display: swap;
     font-size:19px;
     font-weight:600;
 }
@@ -32,6 +33,7 @@ button{
     color:rgb(255, 255, 255);
     margin-right:3vh;
     font-family: 'Montserrat';
+    font-display: swap;
     font-size:19px;
     font-weight:600;
 }
@@ -40,6 +42,7 @@ button{
     padding:1.75vh 3vh;
     background:none;
     font-family: 'Montserrat';
+    font-display: swap;
     font-size:19px;
     font-weight:600;
 }
@@ -56,6 +59,14 @@ button:hover {
     background:#F8CB59;
 }
 .bt-yl-f{
+    margin:0;
+    padding:1.6vh 2.2vh;
+    color:rgb(255, 255, 255);
+    margin-right:3vh;
+    font-family: 'Montserrat';
+    font-display: swap;
+    font-size:19px;
+    font-weight:600;
     background:#F8CB59;
     color: #C0962A;
 }

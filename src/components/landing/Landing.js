@@ -23,6 +23,7 @@ const Landing = () => {
              <p>Student Developer, Artist and a 3rd year undergrad.</p>
              <div className='buttons'>
                 <Button 
+                name='connect'
                 small='h-a-small' 
                 color='bt-y-f' 
                 label="Let's Connect" 
@@ -31,6 +32,7 @@ const Landing = () => {
                 id='hire'
                 />
                 <Button 
+                name='projects'
                 small='h-a-small' 
                 color='bt-y-l' 
                 label="Projects" 

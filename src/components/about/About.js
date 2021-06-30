@@ -35,8 +35,8 @@ const About = () => {
                 </p>
                 <br/><br/>
                 <div data-aos='fade-up' className='buttons-about'>
-                    <Button label='fa fa-github' icon={true} color='bt-r-f' fill={true} id='https://github.com/ishita1805'/>
-                    <Button label='My Resume' color='bt-r-l' fill={false} id={resume}/>
+                    <Button name='github' label='fa fa-github' icon={true} color='bt-r-f' fill={true} id='https://github.com/ishita1805'/>
+                    <Button name='resume' label='My Resume' color='bt-r-l' fill={false} id={resume}/>
                 </div>
                 
             </div>
@@ -48,15 +48,15 @@ const About = () => {
                     <span>March 2021 - May 2021</span>
                 </p>
                 <p data-aos='fade-up' className='about-p-2'>
-                    Software Developer Intern at Umbrette <a href="https://dzylo.com/" target="__blank"><span className='fa fa-external-link'></span></a><br/>
+                    Software Developer Intern at Umbrette <a alt='project' href="https://dzylo.com/" target="__blank"><span className='fa fa-external-link'></span></a><br/>
                     <span>November 2020 - April 2021</span>
                 </p>
                 <p data-aos='fade-up' className='about-p-2'>
-                    Project Lead at HEED India <a href="https://heedindia.org/" target="__blank"><span className='fa fa-external-link'></span></a><br/>
+                    Project Lead at HEED India <a alt='project' href="https://heedindia.org/" target="__blank"><span className='fa fa-external-link'></span></a><br/>
                     <span>November 2020</span>
                 </p>
                 <p data-aos='fade-up' className='about-p-2'>
-                    Software Developer Intern at Codebugged AI <a href="https://www.oilcp2.com/login" target="__blank"><span className='fa fa-external-link'></span></a><br/>
+                    Software Developer Intern at Codebugged AI <a alt='project' href="https://www.oilcp2.com/login" target="__blank"><span className='fa fa-external-link'></span></a><br/>
                     <span>August 2020 - October 2020</span>
                 </p>
             </div>

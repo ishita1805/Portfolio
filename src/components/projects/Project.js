@@ -27,6 +27,7 @@ const Project = () => {
 
             <center>
                 <Button 
+                name='art'
                 color='bt-g-l' 
                 label="Checkout my art" 
                 fill={false}

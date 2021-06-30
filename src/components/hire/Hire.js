@@ -1,7 +1,6 @@
 import React,{ useState,useEffect } from 'react'
 import AOS from 'aos';
 import Header from '../header/Header'
-import Button from '../button/Button'
 import axios from 'axios'
 import { useForm } from 'react-hook-form';
 
@@ -51,7 +50,8 @@ const Hire = () => {
                 {errors.query?<span className='error'>Message is Required</span>:null}<br/>
                 {submit?
                 <b>Thanks for reaching out! I'll get back to you soon 🧁</b>:
-                <Button label='Send A Message' width='w-100' color='bt-yl-f'/>}
+                <button name='send message' className='bt-yl-f w-100'>Send A Message </button>
+                }
             </form>
             <div className='hire-cont'>
                 <Header head='Hire me' color='red'/>
@@ -67,8 +67,8 @@ const Hire = () => {
                    Let's work on the big thing together ;)
                 </p>
                 <div  data-aos='fade-up' className='row s-25'>
-                    <a target='__blank' href='/'><i className='fa fa-github'></i></a>
-                    <a target='__blank' href='/'><i className='fa fa-linkedin'></i></a>
+                    <a alt='github' target='__blank' href='https://github.com/ishita1805'><i className='fa fa-github'></i></a>
+                    <a alt='linkedin' target='__blank'href='https://www.linkedin.com/in/ishita-kabra-3b305818b/'><i className='fa fa-linkedin'></i></a>
                 </div>
             </div>
         </div>

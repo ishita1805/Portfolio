@@ -21,6 +21,7 @@
 }
 #home h1{
     font-family: 'Manjari', sans-serif;
+    font-display: swap;
     margin:0;
     font-weight:300;
     z-index:20;
@@ -30,13 +31,14 @@
 #home p{
     font-size:20px;
     z-index:20;
-    color:rgb(133, 133, 133);
+    color:rgb(70, 70, 70);
     /* font-weight:600 !important; */
 }
 .head-span{
     padding:0;
     font-weight: 700 ;
     font-family: 'Montserrat', sans-serif;
+    font-display: swap;
     color: #F3EEE0;
     animation: animate-background alternate 13s infinite;
 }

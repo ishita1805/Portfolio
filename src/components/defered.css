@@ -52,11 +52,12 @@ input[type=number] {
 }
 input{
     cursor:pointer;
-    padding:2vh;
+    padding:16px 2vh;
     border:none;
     outline:none;
     color:rgb(80, 79, 79);
     font-family:'Montserrat';
+    font-display: swap;
     font-size:16px;
     border-left:solid 1vh #FFCF54;
     background:#F2F2F2;
@@ -67,14 +68,15 @@ input{
 }
 textarea{
     cursor:pointer;
-    padding:2vh;
+    padding:16px 2vh;
     border:none;
     font-family:'Montserrat';
+    font-display: swap;
     color:rgb(80, 79, 79);
     outline:none;
     font-weight:400;
     font-size:16px;
-    min-height:30vh;
+    min-height: 200px;
     border-left:solid 1vh #FFCF54;
     border-right: solid 1vh #F2F2F2;
     background:#F2F2F2;
@@ -143,6 +145,7 @@ textarea{
 }
 .project-card h3{
     font-family: 'Montserrat', sans-serif;
+    font-display: swap;
     font-weight:700;
     font-size:20px;
     margin:2.5vh 2vh 0 2vh;
