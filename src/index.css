@@ -1,9 +1,9 @@
 body, html {
   margin: 0;
   font-family: 'Montserrat', sans-serif;
+  font-display: swap;
   -webkit-font-smoothing: antialiased;
   overflow-x:hidden !important;
-  font-display: fallback;
   max-width:100vw !important;
   -moz-osx-font-smoothing: grayscale;
   cursor: none;
