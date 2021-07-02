@@ -9,9 +9,7 @@ import { CacheFirst } from 'workbox-strategies';
 clientsClaim();
 self.skipWaiting();
 
-
 precacheAndRoute(self.__WB_MANIFEST);
-
 
 const fileExtensionRegexp = new RegExp('/[^/?]+\\.[^/]+$');
 registerRoute(

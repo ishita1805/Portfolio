@@ -4,8 +4,6 @@ import './about.css'
 import Button from '../button/Button'
 import techList from '../../data/techList'
 import AOS from 'aos';
-import resume from '../../assets/resume.pdf'
-
 
 const About = () => {
     
@@ -36,7 +34,7 @@ const About = () => {
                 <br/><br/>
                 <div data-aos='fade-up' className='buttons-about'>
                     <Button name='github' label='fa fa-github' icon={true} color='bt-r-f' fill={true} id='https://github.com/ishita1805'/>
-                    <Button name='resume' label='My Resume' color='bt-r-l' fill={false} id={resume}/>
+                    <Button name='resume' label='My Resume' color='bt-r-l' fill={false} id='https://drive.google.com/file/d/1v2krzqSfmrWTIVUNTzKYj7m9Zj-BmKbd/view?usp=sharing'/>
                 </div>
                 
             </div>

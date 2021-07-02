@@ -26,7 +26,7 @@
 .cursor--hidden {
     opacity: 0;
 }
-@media screen and (max-width:499px){
+@media screen and (max-width:480px){
   .cursor{
     display:none;
   }
