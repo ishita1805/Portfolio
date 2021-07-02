@@ -64,7 +64,7 @@ function registerValidSW(swUrl, config) {
         installingWorker.onstatechange = () => {
           if (installingWorker.state === 'installed') {
             if (navigator.serviceWorker.controller) {
-              
+              console.log("new version available. please reload")
               // onUpdate callback
               if (config && config.onUpdate) {
                 config.onUpdate(registration);

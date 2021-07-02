@@ -32,11 +32,11 @@ registerRoute(
 
 
 registerRoute(
-  ({ url }) => url.origin === self.location.origin && url.pathname.endsWith('.webp') && url.pathname.endsWith('.css') && url.pathname.endsWith('.pdf'),
+  ({ url }) => url.origin === self.location.origin && url.pathname.endsWith('.webp') && url.pathname.endsWith('.css'),
   new CacheFirst({
     cacheName: 'images and css',
     plugins: [
-      new ExpirationPlugin({ maxEntries: 80 }),
+      new ExpirationPlugin({ maxEntries: 50 }),
     ],
   })
 );
