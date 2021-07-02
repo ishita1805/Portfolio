@@ -67,10 +67,10 @@ function registerValidSW(swUrl) {
               
               // onUpdate callback
               console.log('New content is available');
-              caches.keys().then(function(names) {
-                for (let name of names) caches.delete(name);
-              });
-              window.location.reload(true);
+              // caches.keys().then(function(names) {
+              //   for (let name of names) caches.delete(name);
+              // });
+              // window.location.reload(true);
               // if (config && config.onUpdate) {
               //   config.onUpdate(registration);
               // }
