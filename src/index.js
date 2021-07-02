@@ -18,6 +18,7 @@ ReactDOM.render(
 
 serviceWorkerRegistration.register({
   onUpdate: registration => {
+    alert('new updates available')
     if (registration && registration.waiting) {
       registration.waiting.postMessage({ type: 'SKIP_WAITING' });
     }
