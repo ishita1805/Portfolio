@@ -19,11 +19,11 @@ const navList = [
         label: 'Talks and Events',
         internal: 'true',
     },
-    // {
-    //     id: 'https://drive.google.com/file/d/1v2krzqSfmrWTIVUNTzKYj7m9Zj-BmKbd/view?usp=sharing',
-    //     label: 'Resume',
-    //     internal: 'false',
-    // },
+    {
+        id: 'https://drive.google.com/file/d/1v2krzqSfmrWTIVUNTzKYj7m9Zj-BmKbd/view?usp=sharing',
+        label: 'Resume',
+        internal: 'false',
+    },
 ]
 
 module.exports = navList;
