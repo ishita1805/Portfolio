@@ -52,7 +52,7 @@ export function register(config) {
   }
 }
 
-function registerValidSW(swUrl) {
+function registerValidSW(swUrl, config) {
   navigator.serviceWorker
     .register(swUrl)
     .then((registration) => {
@@ -66,14 +66,9 @@ function registerValidSW(swUrl) {
             if (navigator.serviceWorker.controller) {
               
               // onUpdate callback
-              console.log('New content is available');
-              // caches.keys().then(function(names) {
-              //   for (let name of names) caches.delete(name);
-              // });
-              // window.location.reload(true);
-              // if (config && config.onUpdate) {
-              //   config.onUpdate(registration);
-              // }
+              if (config && config.onUpdate) {
+                config.onUpdate(registration);
+              }
             } else {
               // At this point, everything has been precached.
               // It's the perfect time to display a
@@ -81,9 +76,9 @@ function registerValidSW(swUrl) {
               console.log('Content is cached for offline use.');
 
               // Execute callback for onSuccess
-              // if (config && config.onSuccess) {
-              //   config.onSuccess(registration);
-              // }
+              if (config && config.onSuccess) {
+                config.onSuccess(registration);
+              }
             }
           }
         };

@@ -29,6 +29,9 @@
     "workbox-streams": "^5.1.4"
   },
   "scripts": {
+    "clean": "rm -rf build",
+    "prebuild": "npm run generate-build-version",
+    "generate-build-version": "node generate-build-version",
     "start": "react-scripts start",
     "build": "set \"GENERATE_SOURCEMAP = false\" && react-scripts build",
     "test": "react-scripts test",
