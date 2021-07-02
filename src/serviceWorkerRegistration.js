@@ -52,7 +52,7 @@ export function register(config) {
   }
 }
 
-function registerValidSW(swUrl, config) {
+function registerValidSW(swUrl) {
   navigator.serviceWorker
     .register(swUrl)
     .then((registration) => {
@@ -64,28 +64,26 @@ function registerValidSW(swUrl, config) {
         installingWorker.onstatechange = () => {
           if (installingWorker.state === 'installed') {
             if (navigator.serviceWorker.controller) {
-              // At this point, the updated precached content has been fetched,
-              // but the previous service worker will still serve the older
-              // content until all client tabs are closed.
-              console.log(
-                'New content is available and will be used when all ' +
-                  'tabs for this page are closed. See https://cra.link/PWA.'
-              );
-
-              // Execute callback
-              if (config && config.onUpdate) {
-                config.onUpdate(registration);
-              }
+              
+              // onUpdate callback
+              console.log('New content is available');
+              caches.keys().then(function(names) {
+                for (let name of names) caches.delete(name);
+              });
+              window.location.reload(true);
+              // if (config && config.onUpdate) {
+              //   config.onUpdate(registration);
+              // }
             } else {
               // At this point, everything has been precached.
               // It's the perfect time to display a
               // "Content is cached for offline use." message.
               console.log('Content is cached for offline use.');
 
-              // Execute callback
-              if (config && config.onSuccess) {
-                config.onSuccess(registration);
-              }
+              // Execute callback for onSuccess
+              // if (config && config.onSuccess) {
+              //   config.onSuccess(registration);
+              // }
             }
           }
         };
