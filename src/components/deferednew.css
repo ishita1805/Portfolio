@@ -38,10 +38,10 @@
     color:red;
 }
 input::placeholder{
-    color:rgb(204, 203, 203);
+    color:rgb(87, 87, 87);
 }
 textarea::placeholder{
-    color:rgb(204, 203, 203);
+    color:rgb(87, 87, 87);
 }
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
@@ -116,8 +116,8 @@ textarea{
 }
 .project-card{
     width:52vh;
-    /* border-radius:8px; */
-    margin:0 4vh;
+    height: 36.5vh;
+    margin:2vh 4vh;
     margin-bottom:8vh;
     background:white;
 }
@@ -126,10 +126,8 @@ textarea{
 }
 .img-holder{
     width:52vh;
-    /* border-radius:8px 8px 0 0; */
     height:20vh;
     background:rgb(37, 37, 37);
-    /* border-bottom: solid 2vh #59F8B5; */
     overflow:hidden;
     transition:0.5s;
 }
@@ -183,18 +181,21 @@ textarea{
     margin:0;
 }
 .project-card:hover .img-holder{
-    height:10vh;
+    height:7vh;
     transition:0.5s;
 }
 .project-card:hover img{
-    transform: scale(1.1);
+    transform: scale(1.2);
     transition:0.5s;
 }
 .project-card:hover .text-switch{
     display:none; 
+    height:11vh;
+    transition:0.5s;
 }
 .project-card:hover .text-switch-1{
     display:flex; 
+    transition:0.5s;
 }
 .move-up-icon{
     height:7vh;
