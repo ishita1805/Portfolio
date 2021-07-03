@@ -4,17 +4,12 @@ import './hand.css'
 import AOS from 'aos';
 
 const Hand = () => {
-    // const [vis,setVis] = useState(false)
 
     useEffect(() => {
         AOS.init({
-            duration: 80,
+            duration: 800,
             easing: 'ease-in-out',
           });
-
-        // setTimeout(() => {
-        //     setVis(true)
-        // },1000)
     }, [])
 
     return (

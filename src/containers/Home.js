@@ -2,7 +2,7 @@ import React,{ lazy, Suspense, useState } from 'react'
 import Nav from '../components/navbar'
 import navList from '../data/homeNav'
 import Landing from '../components/landing/Landing'
-import About from '../components/about/About'
+// import About from '../components/about/About'
 import * as Scroll from 'react-scroll';
 import '../components/deferednew.css'
 
@@ -10,6 +10,7 @@ const Project = lazy(() => import('../components/projects/Project'));
 const Talks = lazy(() => import('../components/talks/Talks'));
 const ScrollComp = lazy(() => import('../components/scrollIcon/Scroll'));
 const Hire = lazy(() => import('../components/hire/Hire'));
+const About = lazy(() => import('../components/about/About'));
 
 const Home = () => {
     const [hide,setHide] = useState(true);
@@ -27,7 +28,7 @@ const Home = () => {
     }
 
     return (
-        <div>
+        <div className='overall-cont'>
             <Nav navList={navList} shadow={shadow}/>
 
             <Suspense fallback={<div></div>}>
@@ -36,17 +37,20 @@ const Home = () => {
 
             <Landing/>
 
-            <About/>
-
+           
             <Suspense fallback={<div></div>}>
+                <About/>
+            </Suspense>
+
+            <Suspense fallback={<div className='deffered'></div>}>
                 <Project/>
             </Suspense>
 
-            <Suspense fallback={<div></div>}>
+            <Suspense fallback={<div className='deffered'></div>}>
                 <Hire/>
             </Suspense>
 
-            <Suspense fallback={<div></div>}>
+            <Suspense fallback={<div className='deffered'></div>}>
                 <Talks/>
             </Suspense>
         </div>

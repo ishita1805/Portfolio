@@ -5,7 +5,6 @@
     left:10vh;
     margin-bottom:-3vh;
     width:auto;
-    user-select: none;
 }
 @media screen and (max-width:1200px) {
     .wave-hand{

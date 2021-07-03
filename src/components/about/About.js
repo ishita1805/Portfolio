@@ -5,6 +5,8 @@ import Button from '../button/Button'
 import techList from '../../data/techList'
 import AOS from 'aos';
 
+
+
 const About = () => {
     
     useEffect(() => {
@@ -17,7 +19,7 @@ const About = () => {
     return (
         <div id='about'>
 
-            <div className='about-cont white'>
+            <div className='about-cont'>
                 <Header head='About Me' color='red' theme='light'/>
                 <p data-aos='fade-up' className='about-p'>
                     Hi, I am Ishita. A full-stack developer and an artist. I'm pursuing B. Tech from VIT Vellore, 
@@ -28,13 +30,13 @@ const About = () => {
                     I've been a part of several student organizations and am currently the Projects Lead at TEC - VIT, 
                     where I mentor students in domains like Electronics, Development and Computer vision by conducting workshops, 
                     sessions and building projects. I am also an active member of the Fine Arts Club - VIT.<br/><br/>
-                    {/* I love penning down my thoughts! Checkout my blog  where i write about art and development. */}
+                    I love penning down my thoughts! Checkout my blog  where i write about art and development.
                     Lookout for my upcoming project! <b>MediumRare</b>, a personal blog, where i will write about art and development.
                 </p>
                 <br/><br/>
                 <div data-aos='fade-up' className='buttons-about'>
                     <Button name='github' label='fa fa-github' icon={true} color='bt-r-f' fill={true} id='https://github.com/ishita1805'/>
-                    <Button name='resume' label='My Resume' color='bt-r-l' fill={false} id='https://drive.google.com/file/d/1v2krzqSfmrWTIVUNTzKYj7m9Zj-BmKbd/view?usp=sharing'/>
+                    <Button name='resume' label='My Resume' color='bt-r-l' fill={false} id=''/>
                 </div>
                 
             </div>

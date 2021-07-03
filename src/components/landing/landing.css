@@ -1,55 +1,43 @@
 #home{
+    height:100vh;
     width:100vw;
-    padding:4vh 0;
-    height:92vh;
-    max-height:92vh;
+    background:rgb(250,250,250);
     display:flex;
-    justify-content: center;
-    align-items:center;
     flex-direction:column;
-    text-align:center;
-    overflow-x:hidden;
-    background:rgb(250, 250, 250);
-}
-.landing-image{
-    height:75vh !important;
-    margin-top:40vh;
-    margin-right:3vh;
-    overflow:hidden;
-    z-index:1000000000;
-    width:auto;
+    align-items:center;
+    justify-content: center;
 }
 #home h1{
-    font-family: 'Manjari', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     font-display: swap;
     margin:0;
     font-weight:300;
     z-index:20;
-    color:rgb(54, 54, 54);
-    font-size:70px;
-}
-#home p{
-    font-size:20px;
-    z-index:20;
-    color:rgb(70, 70, 70);
-    /* font-weight:600 !important; */
+    color:rgb(75, 75, 75);
+    font-size:67px;
 }
 .head-span{
     padding:0;
     font-weight: 700 ;
     font-family: 'Montserrat', sans-serif;
     font-display: swap;
-    color: #F3EEE0;
+    background:rgb(250, 250, 250);
     animation: animate-background alternate 13s infinite;
+    text-align:center;
+}
+#home p{
+    font-size:20px;
+    z-index:20;
+    color:rgb(70, 70, 70);
 }
 .buttons{
     display:flex;
-    /* margin:1vh 0; */
     z-index:20;
     flex-direction:row;
     align-items:center;
     justify-content:flex-start;
 }
+
 @keyframes animate-background  {
     from {
         background-position:60% 12%;
@@ -125,5 +113,4 @@
        width:80%;
        margin-left:0;
     }
-
 }
