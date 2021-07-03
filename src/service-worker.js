@@ -1,13 +1,20 @@
 /* eslint-disable no-restricted-globals */
 
-import { clientsClaim } from 'workbox-core';
+import { clientsClaim, skipWaiting } from 'workbox-core';
 import { precacheAndRoute, createHandlerBoundToURL } from 'workbox-precaching';
 import { ExpirationPlugin } from 'workbox-expiration';
 import { registerRoute } from 'workbox-routing';
 import { CacheFirst } from 'workbox-strategies';
 
 clientsClaim();
-self.skipWaiting();
+skipWaiting();
+
+// // self.skipWaiting();
+// self.addEventListener('message', (event) => {
+//   if (event.data && event.data.type === 'SKIP_WAITING') {
+//     self.skipWaiting();
+//   }
+// });
 
 precacheAndRoute(self.__WB_MANIFEST);
 
@@ -40,12 +47,5 @@ registerRoute(
     ],
   })
 );
-
-
-// self.addEventListener('message', (event) => {
-//   if (event.data && event.data.type === 'SKIP_WAITING') {
-//     self.skipWaiting();
-//   }
-// });
 
 
