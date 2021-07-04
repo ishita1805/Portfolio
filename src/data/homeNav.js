@@ -20,7 +20,7 @@ const navList = [
         internal: 'true',
     },
     {
-        id: 'https://drive.google.com/file/d/1v2krzqSfmrWTIVUNTzKYj7m9Zj-BmKbd/view?usp=sharing',
+        id: 'https://drive.google.com/drive/folders/1xaP_yFVg9i_8Z6HgsHnHxP4s9KAdX8qC?usp=sharing',
         label: 'Resume',
         internal: 'false',
     },
