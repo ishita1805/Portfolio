@@ -30,7 +30,7 @@ const About = () => {
                     I've been a part of several student organizations and am currently the Projects Lead at TEC - VIT, 
                     where I mentor students in domains like Electronics, Development and Computer vision by conducting workshops, 
                     sessions and building projects. I am also an active member of the Fine Arts Club - VIT.<br/><br/>
-                    I love penning down my thoughts! Checkout my blog  where i write about art and development.
+                    {/* I love penning down my thoughts! Checkout my blog  where i write about art and development. */}
                     Lookout for my upcoming project! <b>MediumRare</b>, a personal blog, where i will write about art and development.
                 </p>
                 <br/><br/>
@@ -44,16 +44,16 @@ const About = () => {
             <div className='about-cont yellow'>
                 <h2 data-aos='fade-up'>Work Experience</h2><br/>
                 <p data-aos='fade-up' className='about-p-2'>
+                    Product Development Lead at HEED India <a alt='project' href="https://heedindia.org/" target="__blank"><span className='fa fa-external-link'></span></a><br/>
+                    <span>March 2021 - May 2021</span>
+                </p>
+                <p data-aos='fade-up' className='about-p-2'>
                     MERN Stack Trainer at Codebugged AI<br/>
                     <span>March 2021 - May 2021</span>
                 </p>
                 <p data-aos='fade-up' className='about-p-2'>
                     Software Developer Intern at Umbrette <a alt='project' href="https://dzylo.com/" target="__blank"><span className='fa fa-external-link'></span></a><br/>
                     <span>November 2020 - April 2021</span>
-                </p>
-                <p data-aos='fade-up' className='about-p-2'>
-                    Project Lead at HEED India <a alt='project' href="https://heedindia.org/" target="__blank"><span className='fa fa-external-link'></span></a><br/>
-                    <span>November 2020</span>
                 </p>
                 <p data-aos='fade-up' className='about-p-2'>
                     Software Developer Intern at Codebugged AI <a alt='project' href="https://www.oilcp2.com/login" target="__blank"><span className='fa fa-external-link'></span></a><br/>
