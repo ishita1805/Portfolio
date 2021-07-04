@@ -36,7 +36,7 @@ const About = () => {
                 <br/><br/>
                 <div data-aos='fade-up' className='buttons-about'>
                     <Button name='github' label='fa fa-github' icon={true} color='bt-r-f' fill={true} id='https://github.com/ishita1805'/>
-                    <Button name='resume' label='My Resume' color='bt-r-l' fill={false} id='https://drive.google.com/drive/folders/1xaP_yFVg9i_8Z6HgsHnHxP4s9KAdX8qC?usp=sharing'/>
+                    <Button name='resume' label='My Resume' color='bt-r-l' fill={false} id='https://drive.google.com/file/d/1v2krzqSfmrWTIVUNTzKYj7m9Zj-BmKbd/view?usp=sharing'/>
                 </div>
                 
             </div>
