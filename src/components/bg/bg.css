@@ -20,7 +20,17 @@
     align-items:center;
     justify-content: center;
     box-shadow:-12px -12px 16px 0 rgba(116, 116, 116, 0.089),  8px 8px 12px 0 rgb(255, 255, 255);
+  
 }
+.bg-circle-big:hover .bg-circle-small{
+  -webkit-animation:spin 3s ease-in-out infinite;
+    -moz-animation:spin 3s  ease-in-out infinite;
+    animation:spin 3s  ease-in-out infinite;
+    /* box-shadow:-12px -12px 16px 0 rgba(206, 168, 177, 0.185),  8px 8px 12px 0 rgba(255, 232, 189, 0.247) !important; */
+}
+@-moz-keyframes spin { 100% { -moz-transform: rotate(360deg); } }
+@-webkit-keyframes spin { 100% { -webkit-transform: rotate(360deg); } }
+@keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
 @media screen and (max-width:700px) {
     .bg-circle-big{
         height: 90vw;

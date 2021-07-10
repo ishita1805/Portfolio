@@ -64,7 +64,7 @@ const Hire = () => {
                 <p  data-aos='fade-up'>
                    I am interested in product development / devOPS / UI interface design roles. 
                    I am also open to conducting workshops / sessions on developement related topics.
-                   Let's work on the big thing together ;)
+                   Let's work on the next big thing together ;)
                 </p>
                 <div  data-aos='fade-up' className='row s-25'>
                     <a alt='github' target='__blank' href='https://github.com/ishita1805'><i className='fa fa-github'></i></a>
