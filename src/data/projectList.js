@@ -20,7 +20,8 @@ const project = [
     {
         title:'Chat.io',
         githubUrl:'https://github.com/users/ishita1805/projects/2',
-        webUrl:'https://chat.atishi.me/',
+      //  webUrl:'https://chat.atishi.me/',
+        webUrl: false,
         img: chatio,
         tagline:'One-to-One messaging app built on react and Node.js, features include, end-to-end encryption, realtime notifications, last seen and request alerts.',
     },
