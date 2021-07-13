@@ -6,14 +6,14 @@ const navList = [
     },
     {
         id: 'project',
-        label: 'Project',
+        label: 'Projects',
         internal: 'true',
     },
-    {
-        id: 'hire',
-        label: 'Connect',
-        internal: 'true',
-    },
+    // {
+    //     id: 'hire',
+    //     label: 'Connect',
+    //     internal: 'true',
+    // },
     {
         id: 'talks',
         label: 'Talks and Events',

@@ -62,7 +62,7 @@
     background:white;
 }
 .yellow{
-    background:#F8CB59;
+    background:#ffd365;
 }
 .about-p{
     margin-top:5vh;
@@ -72,6 +72,7 @@
 .about-p-2{
     margin:1vh 0;
     font-size:19px;
+    font-weight:500 !important;
     color:rgb(31, 31, 31);
     width:80%;
 }

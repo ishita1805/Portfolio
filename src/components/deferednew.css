@@ -89,11 +89,12 @@ textarea{
     display:flex;
     flex-direction:column;
     padding:7vh 4vw;
-    border-bottom:solid 1.5vh rgb(255, 32, 69);
+   
 }
 .grid-talks{
     display:flex;
     flex-direction:row;
+    justify-content: space-between;
     flex-wrap: wrap;
 }
 
@@ -234,7 +235,7 @@ textarea{
     flex-direction:column;
     align-items:flex-start;
     margin-bottom:8vh;
-    width:50%;
+    width:47%;
 }
 .content-fr{
     display:flex;

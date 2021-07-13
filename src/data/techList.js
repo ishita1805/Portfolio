@@ -5,9 +5,9 @@ import mongo from '../assets/mongo.webp'
 import sql from '../assets/sql.webp'
 import py from  '../assets/py.webp'
 import docker from '../assets/docker.webp'
-import ps from '../assets/ps.webp'
-import ai from '../assets/ai.webp'
-import figma from'../assets/figma.webp'
+// import ps from '../assets/ps.webp'
+// import ai from '../assets/ai.webp'
+// import figma from'../assets/figma.webp'
 import js from '../assets/js.webp'
 import pg from '../assets/pg.webp'
 import go from '../assets/go.webp'
@@ -80,18 +80,18 @@ const tech = [
           url:aws,
           label:'Amazon Web Services'
      },
-     {
-          url:ps,
-          label:'Adobe Photoshop'
-     },
-     {
-          url:ai,
-          label:'Adobe Illustrator'
-     },
-     {
-          url:figma,
-          label:'Figma'
-     },
+     // {
+     //      url:ps,
+     //      label:'Adobe Photoshop'
+     // },
+     // {
+     //      url:ai,
+     //      label:'Adobe Illustrator'
+     // },
+     // {
+     //      url:figma,
+     //      label:'Figma'
+     // },
      // {
      //      url:flutter,
      //      label:'Flutter'

@@ -5,6 +5,7 @@ import Landing from '../components/landing/Landing'
 // import About from '../components/about/About'
 import * as Scroll from 'react-scroll';
 import '../components/deferednew.css'
+import Footer from '../components/footer/Footer';
 
 const Project = lazy(() => import('../components/projects/Project'));
 const Talks = lazy(() => import('../components/talks/Talks'));
@@ -53,6 +54,7 @@ const Home = () => {
             <Suspense fallback={<div className='deffered'></div>}>
                 <Talks/>
             </Suspense>
+            <Footer/>
         </div>
     )
 }

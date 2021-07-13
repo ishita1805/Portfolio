@@ -27,3 +27,11 @@ h3, h1, h2 {
 ::-webkit-scrollbar-track{
   background:rgb(0, 0, 0);
 }
+.footer{
+  width:94vw;
+  padding:3vh 3vw;
+  text-align:right;
+  font-weight:500;
+  background:#F3F3F3;
+  border-bottom:solid 1.5vh rgb(255, 32, 69);
+}
