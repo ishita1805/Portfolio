@@ -5,7 +5,7 @@ import typeface from '../assets/p4.webp'
 import chatio from '../assets/p5.webp'
 import mediumrare from '../assets/p6.webp'
 import recom from '../assets/p7.webp'
-// import safespace from '../assets/p8.webp'
+import editor from '../assets/p8.webp'
 
 
 const project = [
@@ -15,7 +15,7 @@ const project = [
         githubUrl:'https://github.com/ishita1805/QuiCLI',
         webUrl:false,
         img: quicli,
-        tagline:'A CLI tool that provides one-click deployments. Comes with many feaures including auto DNS management, dockerization, CI/CD & rollback to last stable release.',
+        tagline:'A CLI tool that provides one-click deployments. Comes with feaures like Port & DNS management, dockerization, CI/CD & rollback to last stable release.',
     },
     {
         title:'Chat.io',
@@ -37,7 +37,7 @@ const project = [
         githubUrl:'https://github.com/ishita1805/ResuME',
         webUrl:false,
         img: resume,
-        tagline:'Generate and deploy your website in one click, using your linkedin profile, also links your website to the domain',
+        tagline:'A Python CLI to auto generate and deploy portfolio website by scraping data from linkedIn. Uses Selenium. Provides version control using git, update and delete features to manage website.',
     },
     {
         title:'Typeface Editor',
@@ -61,13 +61,13 @@ const project = [
         img: recom,
         tagline:'A github repository which explores various types of recommendation systems.',
     },
-    // {
-    //     title:'Safe Space',
-    //     githubUrl:'',
-    //     webUrl:'https://atishi.me/',
-    //     img: safespace,
-    //     tagline:'A cross-platform, mental health centric social media application built on flutter and Node.js',
-    // },
+    {
+        title:'Online Code Editor',
+        githubUrl:'https://github.com/ishita1805/Online-Code-Editor',
+        webUrl:'https://editor.atishi.me/',
+        img: editor,
+        tagline:'An online HTML, CSS and JS code editor built on react, let\'s you collaborate with others by sharing your code. You can view and edit old shared codes. Auto saves code ',
+    },
 ]
 
 export default project;
