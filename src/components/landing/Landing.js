@@ -20,7 +20,7 @@ const Landing = () => {
         <div id='home'>
              <Icons/>
             <h1>Hey there! I am <span className='head-span' style={style}>Ishita</span></h1>
-             <p>Student Developer, Artist and a 3rd year undergrad.</p>
+             <p>Student Developer, Artist and a 4th year undergrad.</p>
              <div className='buttons'>
                 <Button 
                 name='connect'
