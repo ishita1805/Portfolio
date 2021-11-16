@@ -11,12 +11,13 @@ import docker from '../assets/docker.webp'
 import js from '../assets/js.webp'
 import pg from '../assets/pg.webp'
 import go from '../assets/go.webp'
-import postman from '../assets/postman.webp'
+// import postman from '../assets/postman.webp'
 import selenium from '../assets/selenium.webp'
 import opencv from '../assets/opencv.webp'
 // import flutter from '../assets/flutter.webp'
-// import ts from '../assets/ts.webp'
-import nginx from '../assets/nginx.webp'
+import ts from '../assets/ts.webp'
+import next from '../assets/next.webp'
+// import nginx from '../assets/nginx.webp'
 import aws from '../assets/aws.webp'
 
 const tech = [
@@ -33,12 +34,20 @@ const tech = [
           label:'Node.js'
      },
      {
+          url:ts,
+          label:'Typescript'
+     },
+     {
           url:go,
           label:'Golang'
      },
      {
           url:react,
           label:'React.js'
+     },
+     {
+          url:next,
+          label:'NextJS'
      },
      {
           url:pg,
@@ -53,33 +62,33 @@ const tech = [
           label:'MySQL'
      },
      {
-          url:selenium,
-          label:'Selenium'
-     },
-     {
           url:py,
           label:'Python'
+     },
+     {
+          url:selenium,
+          label:'Selenium'
      },
      {
           url:opencv,
           label:'OpenCV'
      },
-     {
-          url:postman,
-          label:'Postman'
-     },
+     // {
+     //      url:postman,
+     //      label:'Postman'
+     // },
      {
           url:docker,
           label:'Docker'
      },
-     {
-          url:nginx,
-          label:'Nginx'
-     },
+     // {
+     //      url:nginx,
+     //      label:'Nginx'
+     // },
      {
           url:aws,
           label:'Amazon Web Services'
-     },
+     }
      // {
      //      url:ps,
      //      label:'Adobe Photoshop'
@@ -95,10 +104,6 @@ const tech = [
      // {
      //      url:flutter,
      //      label:'Flutter'
-     // },
-     // {
-     //      url:ts,
-     //      label:'Typescript'
      // },
 ]
 
